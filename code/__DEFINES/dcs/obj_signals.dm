@@ -45,3 +45,8 @@
 /// from /datum/component/supermatter_crystal/proc/consume()
 /// called on the thing consumed, passes the thing which consumed it
 #define COMSIG_SUPERMATTER_CONSUMED "sm_consumed_this"
+
+// /obj/item/projectile/beam/cult signal
+
+/// sent from /obj/item/projectile/beam/cult/on_hit, calls /mob/living/basic/cultist/beam/combo_increment: (parent, victim)
+#define COMSIG_PROJ_COMBO_CHECK "combo_check"
