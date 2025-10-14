@@ -19,7 +19,7 @@
 	icon = 'icons/mob/simple_human.dmi'
 	icon_state = "cultist" //ouughh the blade is in the wrong hand, left is evil anyways
 	icon_living = "cultist"
-	//icon_dead = "cultist_dead" // Does not actually exist. del_on_death.
+	icon_dead = "cultist_dead" // Does not actually exist. del_on_death.
 	mob_biotypes = MOB_ORGANIC | MOB_HUMANOID
 	response_help_continuous = "pushes the"
 	response_help_continuous = "push the"

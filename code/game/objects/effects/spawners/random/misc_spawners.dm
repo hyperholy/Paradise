@@ -293,3 +293,11 @@
 		/obj/item/stack/sheet/mineral/uranium/ten = 5,
 		/obj/item/stack/sheet/mineral/diamond/ten = 1,
 	)
+
+/obj/effect/spawner/random/space_cultist
+	name = "random cultist npc spawner"
+	icon_state = "questionmark"
+	loot = list(
+		/mob/living/basic/cultist,
+		/mob/living/basic/cultist/beam,
+	)
