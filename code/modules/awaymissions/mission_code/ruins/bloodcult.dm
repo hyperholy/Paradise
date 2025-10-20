@@ -52,6 +52,7 @@
 	AddComponent(/datum/component/aggro_emote, aggro_sound = pick('sound/hallucinations/growl1.ogg', 'sound/hallucinations/growl2.ogg', 'sound/hallucinations/growl3.ogg'), emote_chance = 100)
 	add_language("Galactic Common")
 	set_default_language(GLOB.all_languages["Galactic Common"])
+	set_light(2, 2, COLOR_RED)
 	if(prob(50))
 		loot = list(/obj/item/salvage/ruin/tablet,
 			/obj/effect/mob_spawn/human/corpse/cultist,
