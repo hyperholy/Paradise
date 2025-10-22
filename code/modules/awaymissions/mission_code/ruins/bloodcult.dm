@@ -103,9 +103,9 @@
 
 /mob/living/basic/cultist/beam/proc/combo_activate(parent, mob/living/carbon/human/target)
 	sleep((ranged_burst_count * ranged_burst_interval) + 0.5 SECONDS) //cant check if a burst is done so lets estimate!
-	for(var/H in combotargets)
-		if(H >= combo_threshold) //same target combo_threshold times in a burst?
-			combotargets.Cut(combotargets.Find(H))
+	for(var/i in 1 to length(combotargets))
+		if(combotargets[i] >= combo_threshold) //same target combo_threshold times in a burst?
+			combotargets.Cut(i)
 			fire_projectile(/obj/item/projectile/magic/cult_heal, target, 'sound/magic/wand_teleport.ogg', src) //fuck it we do it live
 
 /datum/ai_controller/basic_controller/simple/cultist //TODO: run to runes when low, drag dead carbons to runes

@@ -1,0 +1,6612 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ab" = (
+/obj/effect/rune{
+	icon_state = "offering"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_2";
+	dir = 6
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"ad" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/cult/pylon,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"ae" = (
+/obj/effect/rune{
+	icon_state = "revive";
+	color = "#770707"
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"aj" = (
+/obj/structure/railing,
+/obj/structure/window/basic,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"aV" = (
+/obj/item/flag/cult,
+/obj/machinery/light/small,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"aW" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 4
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"bd" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter2";
+	plane = 0
+	},
+/turf/simulated/wall/indestructible,
+/area/ruin/powered)
+"bu" = (
+/turf/simulated/floor/plating,
+/area/ruin/powered)
+"bx" = (
+/obj/structure/window/plasmareinforced{
+	dir = 8
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"bM" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 9
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"bO" = (
+/obj/structure/barricade/security,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"cc" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"cf" = (
+/turf/simulated/floor/chasm/straight_down,
+/area/ruin/powered)
+"cj" = (
+/turf/simulated/floor/chasm/space_ruin,
+/area/ruin/powered)
+"cD" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "darkredblue"
+	},
+/area/ruin/powered)
+"cK" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/ruin/powered)
+"dj" = (
+/obj/effect/rune{
+	icon_state = "offering"
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"dl" = (
+/turf/space,
+/area/ruin/powered)
+"dp" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"dv" = (
+/obj/machinery/door/airlock,
+/turf/simulated/wall,
+/area/ruin/powered)
+"dF" = (
+/obj/machinery/recharge_station,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/ruin/powered)
+"ef" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/plasteel{
+	dir = 10;
+	icon_state = "darkblue"
+	},
+/area/ruin/powered)
+"eg" = (
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"eh" = (
+/obj/effect/rune{
+	icon_state = "barrier"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 9
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"en" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "darkblue"
+	},
+/area/ruin/powered)
+"er" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "darkred"
+	},
+/area/ruin/powered)
+"eC" = (
+/obj/structure/sign/poster/official/anniversary_vintage_reprint/directional/north,
+/obj/structure/chair/stool{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"eM" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 4
+	},
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"eZ" = (
+/turf/simulated/wall/indestructible/rock,
+/area/ruin/powered)
+"fr" = (
+/obj/structure/chair/sofa/bench{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"fs" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1"
+	},
+/obj/structure/rack,
+/obj/item/reagent_containers/drinks/bottle/vodka{
+	pixel_x = 3
+	},
+/obj/item/reagent_containers/drinks/bottle/vodka{
+	pixel_x = -9
+	},
+/obj/effect/spawner/random/maintenance,
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"fx" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_1"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter3";
+	dir = 6
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"fF" = (
+/obj/structure/table/glass/reinforced/plasma,
+/obj/item/ashtray/bronze,
+/obj/item/reagent_containers/drinks/drinkingglass/cola{
+	pixel_x = 6;
+	pixel_y = 14
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"fJ" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"fL" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/window/basic{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"fU" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/simulated/floor/plating/asteroid/basalt/airless,
+/area/ruin/powered)
+"fX" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"gz" = (
+/obj/machinery/door/airlock/cult/glass/friendly,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"gE" = (
+/obj/structure/window/full/reinforced/tinted,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"hd" = (
+/obj/effect/cult_portal_exit,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"hF" = (
+/obj/machinery/economy/vending/cigarette,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"hR" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1"
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"hX" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter3"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 5
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"hZ" = (
+/obj/structure/table/glass/reinforced/plasma,
+/obj/item/reagent_containers/drinks/drinkingglass/devilskiss{
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/drinks/drinkingglass/syndicate_bomb{
+	pixel_x = 8;
+	pixel_y = 11
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"ir" = (
+/obj/structure/bed,
+/obj/item/bedsheet/black,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/rune{
+	icon_state = "barrier"
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"iG" = (
+/obj/item/kirbyplants,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"iS" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/powered)
+"iV" = (
+/obj/machinery/economy/vending/boozeomat,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"je" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"jk" = (
+/obj/structure/railing/corner,
+/turf/simulated/floor/catwalk,
+/area/ruin/powered)
+"jJ" = (
+/obj/effect/rune{
+	icon_state = "revive"
+	},
+/obj/structure/window/plasmareinforced{
+	dir = 4
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"jM" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/powered)
+"jX" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter6";
+	dir = 6
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_2";
+	dir = 6
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"ka" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/simulated/floor/plating/asteroid/basalt/airless,
+/area/ruin/powered)
+"kd" = (
+/obj/machinery/door/airlock,
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"kC" = (
+/obj/effect/rune{
+	icon_state = "spirit_realm"
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"kU" = (
+/obj/structure/chair/e_chair{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	dir = 10;
+	icon_state = "darkblue"
+	},
+/area/ruin/powered)
+"lf" = (
+/obj/structure/table,
+/obj/item/storage/box/donkpockets,
+/obj/structure/sign/poster/official/anniversary_vintage_reprint/directional/north,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"lk" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 1
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"lD" = (
+/obj/effect/mapping_helpers/turfs/burn,
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"lG" = (
+/obj/effect/mapping_helpers/turfs/burn,
+/obj/structure/closet/cabinet,
+/obj/effect/spawner/random/maintenance,
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"ms" = (
+/obj/effect/rune{
+	icon_state = "revive"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 10
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"mK" = (
+/obj/effect/rune{
+	icon_state = "spirit_realm"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 5
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"nh" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "u_psycopath";
+	dir = 6
+	},
+/obj/structure/holosign/barrier/engineering,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"nt" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/cult/pylon,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"nK" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkred"
+	},
+/area/ruin/powered)
+"nZ" = (
+/obj/structure/window/plasmareinforced{
+	dir = 4
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"oa" = (
+/turf/simulated/floor/catwalk,
+/area/ruin/powered)
+"oo" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"ot" = (
+/obj/structure/extinguisher_cabinet{
+	name = "west bump";
+	pixel_x = -27
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/ruin/powered)
+"oJ" = (
+/obj/effect/rune{
+	icon_state = "barrier"
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"oP" = (
+/obj/item/kirbyplants,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/powered)
+"pt" = (
+/obj/structure/table,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkred"
+	},
+/area/ruin/powered)
+"qc" = (
+/obj/structure/table/glass/reinforced/plasma,
+/obj/item/reagent_containers/drinks/drinkingglass/pina_colada{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/drinks/drinkingglass/soda{
+	pixel_x = 5
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"qk" = (
+/obj/machinery/door/airlock,
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"qr" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "u_psycopath_l"
+	},
+/obj/structure/holosign/barrier,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"qE" = (
+/obj/structure/table/glass/reinforced/plastitanium,
+/obj/machinery/door/window/classic/normal{
+	dir = 4;
+	name = "Glass Door"
+	},
+/obj/item/desk_bell,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"qI" = (
+/turf/simulated/floor/indestructible/necropolis,
+/area/ruin/powered)
+"qL" = (
+/obj/machinery/computer/arcade/recruiter{
+	dir = 8;
+	emagged = 1
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"qO" = (
+/obj/structure/sign/poster/official/cleanliness/directional/south,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"rr" = (
+/obj/item/bedsheet/black,
+/obj/structure/bed,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"rz" = (
+/obj/effect/rune{
+	icon_state = "barrier"
+	},
+/obj/structure/window/plasmareinforced{
+	dir = 8
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"rE" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_2"
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/powered)
+"rG" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"rY" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/effect/spawner/window,
+/turf/simulated/floor/grass,
+/area/ruin/powered)
+"sf" = (
+/obj/structure/table,
+/obj/machinery/recharger,
+/obj/machinery/light/small,
+/obj/effect/spawner/random/maintenance,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"sk" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/obj/structure/window/basic{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"sp" = (
+/obj/structure/table,
+/turf/simulated/floor/plasteel{
+	dir = 10;
+	icon_state = "darkblue"
+	},
+/area/ruin/powered)
+"sA" = (
+/obj/structure/barricade/wooden,
+/turf/simulated/floor/plasteel{
+	dir = 10;
+	icon_state = "darkblue"
+	},
+/area/ruin/powered)
+"sO" = (
+/obj/structure/toilet/directional/east,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/effect/rune{
+	icon_state = "2"
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/ruin/powered)
+"sP" = (
+/obj/effect/rune{
+	icon_state = "summon"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2";
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"sX" = (
+/obj/structure/railing{
+	dir = 6
+	},
+/turf/simulated/floor/light/disco{
+	color = "#94007a"
+	},
+/area/ruin/powered)
+"tq" = (
+/obj/machinery/door/poddoor/multi_tile/impassable{
+	dir = 1
+	},
+/turf/space,
+/area/ruin/powered)
+"tK" = (
+/obj/structure/table,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkblue"
+	},
+/area/ruin/powered)
+"tO" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter1"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 5
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"tW" = (
+/turf/simulated/floor/plating/asteroid/basalt/airless,
+/area/ruin/powered)
+"up" = (
+/turf/simulated/floor/chasm/space_ruin/airless,
+/area/ruin/powered)
+"uv" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/catwalk,
+/area/ruin/powered)
+"uP" = (
+/obj/effect/mapping_helpers/turfs/rust,
+/turf/simulated/wall/indestructible/riveted,
+/area/ruin/powered)
+"vb" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/effect/mob_spawn/human/corpse/cultist,
+/turf/simulated/floor/light/disco{
+	color = "#94007a"
+	},
+/area/ruin/powered)
+"vj" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/ruin/powered)
+"vs" = (
+/obj/machinery/door/airlock/cult/friendly,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"vH" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 6
+	},
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"vL" = (
+/obj/structure/extinguisher_cabinet{
+	name = "east bump";
+	pixel_x = 27
+	},
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"vM" = (
+/obj/structure/railing/cap,
+/obj/structure/window/plasmabasic{
+	dir = 1
+	},
+/obj/effect/rune{
+	icon_state = "blood_boil"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2";
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"vV" = (
+/obj/effect/rune{
+	icon_state = "revive"
+	},
+/obj/structure/window/plasmareinforced{
+	dir = 8
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"wu" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/ruin/powered)
+"wz" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkblue"
+	},
+/area/ruin/powered)
+"xf" = (
+/obj/machinery/door/airlock,
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1"
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"xw" = (
+/obj/effect/mapping_helpers/turfs/rust,
+/turf/simulated/wall,
+/area/ruin/powered)
+"xM" = (
+/obj/machinery/door/poddoor/multi_tile/impassable{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"yx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/walllocker/emerglocker/directional/north,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"ze" = (
+/obj/structure/holosign/barrier,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"zN" = (
+/obj/structure/chair/office/dark{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"zR" = (
+/turf/simulated/floor/plasteel{
+	dir = 1;
+	icon_state = "escapecorner"
+	},
+/area/ruin/powered)
+"An" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkred"
+	},
+/area/ruin/powered)
+"Aw" = (
+/obj/machinery/computer/arcade/battle{
+	dir = 8;
+	emagged = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"AN" = (
+/turf/simulated/wall/cult,
+/area/ruin/powered)
+"Ba" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 10
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"BE" = (
+/obj/structure/chair/comfy/purp{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2";
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter3"
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"BL" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"BM" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter3"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 10
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/powered)
+"Ck" = (
+/obj/structure/table,
+/obj/structure/table,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkred"
+	},
+/area/ruin/powered)
+"CY" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter2";
+	plane = 0
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 9
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"Di" = (
+/obj/structure/falsewall,
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"Dw" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/floor/plating/asteroid/basalt/airless,
+/area/ruin/powered)
+"DV" = (
+/obj/structure/table,
+/obj/machinery/kitchen_machine/microwave,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"DY" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/obj/structure/railing/corner,
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2";
+	dir = 5
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"Eq" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/effect/rune{
+	icon_state = "blood_boil"
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"Es" = (
+/turf/simulated/floor/plasteel{
+	dir = 10;
+	icon_state = "darkblue"
+	},
+/area/ruin/powered)
+"Ey" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter2";
+	dir = 6
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_2";
+	dir = 6
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"Ez" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"EQ" = (
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"EY" = (
+/obj/effect/rune{
+	icon_state = "barrier"
+	},
+/obj/effect/mob_spawn/human/corpse/cultist,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"Fe" = (
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "darkbluecorners"
+	},
+/area/ruin/powered)
+"FC" = (
+/obj/structure/musician/piano,
+/obj/effect/rune{
+	icon_state = "blood_boil"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2";
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"FF" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/chair/light{
+	dir = 4
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/powered)
+"Gc" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/simulated/floor/plating/asteroid/basalt/airless,
+/area/ruin/powered)
+"Gd" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/chair/light{
+	dir = 8
+	},
+/turf/simulated/floor/catwalk,
+/area/ruin/powered)
+"Gz" = (
+/obj/effect/rune{
+	icon_state = "blood_boil"
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"GV" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/plasteel{
+	dir = 1;
+	icon_state = "escapecorner"
+	},
+/area/ruin/powered)
+"Hc" = (
+/obj/structure/barricade/security,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"He" = (
+/obj/structure/table,
+/obj/item/lighter/zippo{
+	pixel_x = 11;
+	pixel_y = 1
+	},
+/obj/item/book/manual/barman_recipes,
+/obj/structure/window/plasmabasic{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"HH" = (
+/obj/structure/table/glass/reinforced/plastitanium,
+/obj/machinery/door/window/classic/reversed{
+	dir = 4;
+	name = "Glass Door"
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"HI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 6
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"HO" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/ruin/powered)
+"HX" = (
+/obj/structure/sink/kitchen/old/directional/east,
+/obj/effect/decal/cleanable/vomit,
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/ruin/powered)
+"Is" = (
+/obj/structure/railing,
+/turf/simulated/floor/light/disco{
+	color = "#94007a"
+	},
+/area/ruin/powered)
+"IM" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "darkred"
+	},
+/area/ruin/powered)
+"IV" = (
+/obj/structure/bed,
+/obj/item/bedsheet/black,
+/obj/machinery/light/small,
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"IW" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/simulated/floor/plating/asteroid/basalt/airless,
+/area/ruin/powered)
+"Jk" = (
+/obj/structure/window/plasmabasic{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2";
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter2";
+	dir = 6
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"JZ" = (
+/obj/effect/mapping_helpers/turfs/damage,
+/turf/simulated/floor/plasteel{
+	icon_state = "freezerfloor"
+	},
+/area/ruin/powered)
+"Kg" = (
+/obj/item/flag/cult,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"Kt" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/effect/spawner/window,
+/turf/simulated/floor/grass,
+/area/ruin/powered)
+"Kz" = (
+/obj/structure/window/basic{
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"KR" = (
+/obj/structure/window/plasmabasic{
+	dir = 4
+	},
+/obj/effect/rune{
+	icon_state = "offering"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2"
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"Lb" = (
+/obj/effect/rune{
+	icon_state = "teleport"
+	},
+/obj/effect/mob_spawn/human/corpse/scientist,
+/turf/simulated/floor/light/disco{
+	color = "#94007a"
+	},
+/area/ruin/powered)
+"Ld" = (
+/obj/effect/rune{
+	icon_state = "empower"
+	},
+/obj/effect/mob_spawn/human/corpse/cultist,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"Lq" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter3"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 10
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"Lt" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"LB" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2";
+	dir = 10
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"LG" = (
+/obj/structure/barricade/wooden,
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"LK" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter4"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 10
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"LR" = (
+/obj/structure/window/plasmabasic{
+	dir = 4
+	},
+/obj/effect/rune{
+	icon_state = "empower"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2"
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"Mk" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter2"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 9
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"MG" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "darkred";
+	dir = 6
+	},
+/area/ruin/powered)
+"MS" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1"
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"MU" = (
+/obj/structure/chair/stool/bar{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"MY" = (
+/obj/effect/rune{
+	icon_state = "offering"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2"
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"Nf" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2";
+	dir = 9
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"Nj" = (
+/obj/structure/table,
+/obj/structure/window/plasmabasic{
+	dir = 8
+	},
+/obj/machinery/chem_dispenser/soda{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"ND" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1"
+	},
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"NQ" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"NX" = (
+/obj/machinery/door/airlock,
+/obj/machinery/door/airlock,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"Om" = (
+/obj/structure/table/glass/reinforced/plasma,
+/obj/item/clothing/mask/cigarette/cigar,
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"Pl" = (
+/obj/effect/rune{
+	icon_state = "teleport";
+	color = "#770707"
+	},
+/obj/effect/mob_spawn/human/corpse/cultist,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"PY" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkred"
+	},
+/area/ruin/powered)
+"Qk" = (
+/turf/simulated/wall/indestructible/boss,
+/area/ruin/powered)
+"Qw" = (
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "darkblue"
+	},
+/area/ruin/powered)
+"Qz" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/plating,
+/area/ruin/powered)
+"QQ" = (
+/obj/structure/barricade/wooden,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"Re" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"Rg" = (
+/turf/simulated/wall/indestructible/riveted,
+/area/ruin/powered)
+"RM" = (
+/turf/simulated/wall,
+/area/ruin/powered)
+"Sx" = (
+/obj/item/mounted/mirror,
+/turf/simulated/wall/indestructible,
+/area/ruin/powered)
+"SG" = (
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"SN" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/obj/effect/mob_spawn/human/corpse/damaged,
+/obj/item/gun/projectile/revolver/doublebarrel{
+	pixel_x = -2;
+	pixel_y = 7
+	},
+/obj/item/organ/internal/ears{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/obj/item/ammo_casing/shotgun/frag12{
+	pixel_x = 12;
+	pixel_y = -6
+	},
+/turf/simulated/floor/plating/damaged,
+/area/ruin/powered)
+"SU" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2";
+	dir = 6
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"Te" = (
+/turf/simulated/mineral/random/low_chance/space,
+/area/ruin/powered)
+"Tw" = (
+/obj/structure/railing/corner,
+/obj/effect/rune{
+	icon_state = "summon"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2"
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"Uj" = (
+/obj/structure/holosign/barrier/engineering,
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"Um" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"Uu" = (
+/obj/structure/filingcabinet,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/poster/official/high_class_martini/directional/east,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"Uy" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/item/chair/light,
+/turf/simulated/floor/catwalk,
+/area/ruin/powered)
+"UA" = (
+/obj/machinery/power/emitter{
+	anchored = 1;
+	dir = 4;
+	state = 2
+	},
+/turf/simulated/floor/plasteel{
+	dir = 10;
+	icon_state = "darkblue"
+	},
+/area/ruin/powered)
+"UE" = (
+/obj/structure/railing,
+/obj/effect/rune{
+	icon = 'icons/effects/96x96.dmi';
+	icon_state = "rune_large"
+	},
+/turf/simulated/floor/light/disco{
+	color = "#94007a"
+	},
+/area/ruin/powered)
+"UO" = (
+/obj/structure/window/plasmabasic{
+	dir = 1
+	},
+/obj/effect/rune{
+	icon_state = "empower"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_2";
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"US" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"UW" = (
+/obj/structure/window/plasmabasic{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xttrails_1"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter2";
+	plane = 0
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"Vp" = (
+/obj/structure/rack,
+/obj/effect/spawner/random/maintenance,
+/obj/structure/window/basic{
+	dir = 8;
+	pixel_x = -2
+	},
+/obj/structure/window/basic{
+	dir = 4;
+	pixel_x = 2
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"VH" = (
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "darkred"
+	},
+/area/ruin/powered)
+"VJ" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 8
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"VU" = (
+/obj/machinery/door/poddoor/multi_tile/quad,
+/turf/space,
+/area/ruin/powered)
+"WU" = (
+/obj/effect/rune{
+	icon_state = "offering"
+	},
+/obj/structure/window/plasmareinforced{
+	dir = 4
+	},
+/turf/simulated/floor/engine/cult,
+/area/ruin/powered)
+"WV" = (
+/turf/simulated/floor/light/disco{
+	color = "#94007a"
+	},
+/area/ruin/powered)
+"WY" = (
+/obj/effect/mob_spawn/human/corpse/cultist,
+/turf/simulated/floor/light/disco{
+	color = "#94007a"
+	},
+/area/ruin/powered)
+"Xh" = (
+/obj/structure/fluff/drake_statue,
+/turf/simulated/floor/plating/asteroid/basalt/airless,
+/area/ruin/powered)
+"Xj" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 5
+	},
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"Xn" = (
+/obj/machinery/door/poddoor/multi_tile/impassable{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "darkblue"
+	},
+/area/ruin/powered)
+"XB" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/simulated/floor/light/disco{
+	color = "#94007a"
+	},
+/area/ruin/powered)
+"XJ" = (
+/obj/machinery/economy/vending/coffee{
+	tilted = 1;
+	power_state = 0
+	},
+/obj/effect/mapping_helpers/turfs/damage,
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+"Yw" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1"
+	},
+/obj/structure/closet/cabinet,
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"YB" = (
+/turf/simulated/wall/indestructible,
+/area/ruin/powered)
+"YN" = (
+/obj/effect/mapping_helpers/turfs/rust,
+/turf/simulated/wall/indestructible,
+/area/ruin/powered)
+"YV" = (
+/obj/machinery/light/small,
+/obj/structure/chair/stool{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"YX" = (
+/obj/structure/chair/sofa/bench{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter1"
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkgrey"
+	},
+/area/ruin/powered)
+"YY" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 5
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/wood,
+/area/ruin/powered)
+"ZG" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "xsplatter2"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 10
+	},
+/turf/simulated/floor/carpet,
+/area/ruin/powered)
+
+(1,1,1) = {"
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(2,1,1) = {"
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(3,1,1) = {"
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(4,1,1) = {"
+dl
+dl
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+"}
+(5,1,1) = {"
+dl
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+"}
+(6,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+Te
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+"}
+(7,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+Te
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+dl
+dl
+dl
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+Te
+Te
+Te
+Te
+Te
+Te
+eZ
+eZ
+eZ
+eZ
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+"}
+(8,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+eZ
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+"}
+(9,1,1) = {"
+dl
+dl
+Te
+Te
+Te
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+RM
+VH
+VH
+VH
+RM
+bu
+bu
+bu
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+Te
+Te
+Te
+Te
+Te
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(10,1,1) = {"
+dl
+dl
+Te
+Te
+Te
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+RM
+VH
+VH
+VH
+RM
+bu
+bu
+bu
+Qz
+bu
+bu
+bu
+bu
+Qz
+bu
+bu
+RM
+RM
+RM
+RM
+RM
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(11,1,1) = {"
+dl
+dl
+Te
+Te
+eZ
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+AN
+AN
+AN
+AN
+AN
+AN
+AN
+RM
+RM
+RM
+RM
+VH
+VH
+VH
+RM
+bu
+bu
+bu
+RM
+RM
+Qz
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+IM
+IM
+RM
+RM
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(12,1,1) = {"
+dl
+dl
+Te
+Te
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+AN
+cD
+cD
+cD
+cD
+cD
+cD
+RM
+VH
+VH
+RM
+VH
+VH
+VH
+RM
+RM
+RM
+RM
+RM
+VH
+VH
+VH
+VH
+PY
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+RM
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(13,1,1) = {"
+dl
+dl
+Te
+Te
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+AN
+cD
+cD
+cD
+cD
+cD
+cD
+RM
+VH
+VH
+dv
+VH
+VH
+VH
+RM
+VH
+VH
+VH
+RM
+VH
+VH
+VH
+VH
+RM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+RM
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(14,1,1) = {"
+dl
+dl
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+AN
+cD
+cD
+cD
+cD
+cD
+cD
+RM
+VH
+VH
+RM
+VH
+VH
+VH
+RM
+VH
+VH
+VH
+dv
+VH
+VH
+VH
+RM
+RM
+RM
+RM
+RM
+IM
+IM
+IM
+RM
+RM
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(15,1,1) = {"
+dl
+dl
+eZ
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+qI
+qI
+qI
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+AN
+cD
+cD
+cD
+cD
+cD
+cD
+RM
+VH
+VH
+RM
+RM
+RM
+RM
+RM
+VH
+VH
+VH
+dv
+VH
+VH
+VH
+VH
+PY
+IM
+IM
+RM
+RM
+PY
+RM
+RM
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+eZ
+eZ
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(16,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+Qk
+qI
+qI
+qI
+Qk
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+AN
+cD
+cD
+cD
+cD
+cD
+cD
+dv
+VH
+VH
+VH
+VH
+VH
+VH
+dv
+VH
+VH
+VH
+RM
+VH
+VH
+VH
+VH
+PY
+IM
+IM
+RM
+IM
+IM
+IM
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+eZ
+tW
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(17,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+Qk
+Qk
+qI
+qI
+qI
+Qk
+Qk
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+AN
+cD
+cD
+cD
+cD
+cD
+cD
+RM
+VH
+VH
+VH
+VH
+VH
+VH
+RM
+RM
+RM
+RM
+RM
+VH
+VH
+VH
+RM
+RM
+PY
+PY
+RM
+IM
+IM
+IM
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+eZ
+eZ
+tW
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(18,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+Qk
+Qk
+Qk
+Qk
+Qk
+Qk
+qI
+qI
+qI
+qI
+qI
+Qk
+Qk
+Qk
+Qk
+Qk
+Qk
+dl
+dl
+dl
+dl
+dl
+AN
+cD
+cD
+cD
+cD
+cD
+cD
+dv
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+RM
+IM
+IM
+pt
+IM
+IM
+RM
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(19,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+dl
+dl
+dl
+dl
+dl
+AN
+cD
+cD
+cD
+cD
+cD
+cD
+RM
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+VH
+RM
+IM
+IM
+pt
+IM
+IM
+RM
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(20,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+dl
+dl
+dl
+dl
+dl
+AN
+cD
+cD
+cD
+cD
+cD
+cD
+RM
+er
+RM
+RM
+er
+RM
+RM
+er
+RM
+RM
+VH
+VH
+VH
+VH
+VH
+VH
+RM
+An
+IM
+Ck
+IM
+IM
+IM
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(21,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+dl
+dl
+dl
+dl
+dl
+AN
+cD
+cD
+cD
+cD
+cD
+cD
+RM
+VH
+VH
+RM
+VH
+VH
+RM
+VH
+VH
+RM
+VH
+VH
+VH
+VH
+VH
+VH
+RM
+nK
+IM
+RM
+IM
+IM
+IM
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(22,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+dl
+dl
+dl
+dl
+dl
+AN
+cD
+cD
+cD
+cD
+cD
+cD
+RM
+VH
+VH
+RM
+VH
+VH
+RM
+VH
+VH
+RM
+VH
+VH
+VH
+Rg
+Rg
+Rg
+Rg
+oo
+xM
+Rg
+RM
+RM
+RM
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+Gc
+Gc
+Gc
+fU
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(23,1,1) = {"
+dl
+dl
+Te
+dl
+Qk
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+Qk
+dl
+dl
+dl
+dl
+AN
+AN
+AN
+AN
+AN
+AN
+AN
+AN
+YB
+YB
+YB
+YB
+YB
+YB
+YB
+YN
+YB
+YB
+YB
+bd
+Rg
+sk
+je
+xf
+HI
+Um
+sf
+Rg
+AN
+AN
+AN
+AN
+AN
+AN
+AN
+AN
+eZ
+up
+up
+up
+ka
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(24,1,1) = {"
+dl
+dl
+Te
+Qk
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+Qk
+dl
+dl
+AN
+AN
+MG
+MG
+MG
+MG
+MG
+Lt
+Eq
+Nj
+He
+iV
+xw
+bM
+fs
+Di
+Yw
+Ba
+RM
+lG
+SN
+RM
+DV
+qO
+Rg
+zN
+Um
+Uu
+AN
+AN
+ad
+bx
+rz
+vV
+bx
+ad
+AN
+AN
+up
+Xh
+up
+ka
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(25,1,1) = {"
+dl
+dl
+Qk
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+Qk
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+Qk
+dl
+AN
+MG
+MG
+MG
+MG
+MG
+MG
+RM
+eg
+eg
+eg
+eg
+RM
+BL
+IV
+RM
+ir
+Re
+xw
+rr
+lD
+RM
+lf
+Um
+uP
+qE
+HH
+Rg
+AN
+Kg
+Pl
+CY
+MS
+MS
+LK
+dj
+aV
+AN
+up
+up
+up
+ka
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(26,1,1) = {"
+dl
+dl
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+qI
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+dl
+AN
+MG
+MG
+MG
+MG
+MG
+RM
+RM
+fF
+hZ
+qc
+Om
+RM
+kd
+RM
+RM
+RM
+kd
+RM
+RM
+cc
+RM
+hF
+Um
+je
+oa
+uv
+jM
+vs
+EQ
+Mk
+ab
+bO
+Uj
+mK
+Lq
+EQ
+VU
+Dw
+Dw
+Dw
+IW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+Te
+dl
+dl
+"}
+(27,1,1) = {"
+dl
+dl
+Qk
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+Qk
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+Qk
+dl
+AN
+MG
+MG
+MG
+MG
+MG
+Lt
+fX
+MU
+MU
+MU
+MU
+Ez
+vH
+XJ
+QQ
+fJ
+Xj
+ND
+ZG
+SG
+Lt
+oa
+jk
+Uy
+Gd
+dp
+US
+AN
+kC
+aW
+nh
+cj
+cj
+ze
+VJ
+oJ
+dl
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+dl
+dl
+dl
+"}
+(28,1,1) = {"
+dl
+dl
+Te
+Qk
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+Qk
+dl
+dl
+AN
+MG
+MG
+MG
+MG
+MG
+NX
+Nf
+MY
+fx
+Tw
+LB
+rG
+SG
+LG
+Hc
+NQ
+vL
+SG
+eM
+SG
+RM
+yx
+aj
+Kt
+rY
+fL
+Um
+AN
+Gz
+VJ
+bO
+cj
+cj
+ze
+aW
+ae
+dl
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+dl
+dl
+dl
+"}
+(29,1,1) = {"
+dl
+dl
+Te
+dl
+Qk
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+Qk
+dl
+dl
+dl
+AN
+MG
+MG
+MG
+MG
+MG
+gE
+UO
+WY
+WV
+UE
+FC
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+YY
+hR
+qk
+rE
+BM
+FF
+FF
+iS
+oa
+vs
+EQ
+hX
+ms
+bO
+qr
+eh
+Ey
+EQ
+dl
+Gc
+Gc
+Gc
+fU
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+dl
+dl
+dl
+"}
+(30,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+dl
+dl
+dl
+dl
+AN
+MG
+MG
+MG
+MG
+MG
+gE
+Jk
+WV
+Lb
+Is
+BE
+RM
+cK
+wu
+ot
+HO
+wu
+Lt
+eg
+Vp
+RM
+iG
+oo
+Um
+Um
+Um
+oP
+AN
+Kg
+EY
+tO
+lk
+MS
+jX
+Ld
+aV
+AN
+up
+up
+up
+ka
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+Te
+dl
+dl
+dl
+"}
+(31,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+dl
+dl
+dl
+dl
+AN
+MG
+MG
+MG
+MG
+MG
+gE
+vM
+vb
+XB
+sX
+sP
+Lt
+JZ
+RM
+vj
+RM
+vj
+RM
+eC
+YV
+RM
+xw
+YX
+fr
+Kz
+Um
+xw
+AN
+AN
+nt
+nZ
+WU
+jJ
+nZ
+nt
+AN
+AN
+up
+Xh
+up
+ka
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+dl
+dl
+dl
+"}
+(32,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+dl
+dl
+dl
+dl
+AN
+AN
+MG
+MG
+MG
+MG
+xw
+DY
+LR
+UW
+KR
+SU
+RM
+HX
+xw
+dF
+xw
+sO
+RM
+qL
+Aw
+RM
+RM
+xw
+xw
+Qw
+Xn
+RM
+YB
+AN
+AN
+AN
+AN
+AN
+AN
+AN
+AN
+eZ
+up
+up
+up
+ka
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+dl
+dl
+dl
+"}
+(33,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+Qk
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+qI
+Qk
+dl
+dl
+RM
+AN
+AN
+AN
+AN
+AN
+AN
+AN
+YB
+YN
+YN
+YB
+YB
+YB
+YB
+Sx
+YB
+YB
+YB
+YN
+YB
+YB
+YB
+YB
+YB
+YB
+YB
+Qw
+Qw
+Qw
+RM
+RM
+RM
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+Dw
+Dw
+Dw
+IW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+dl
+dl
+dl
+"}
+(34,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+Qk
+Qk
+Qk
+Qk
+Qk
+Qk
+qI
+qI
+qI
+qI
+qI
+Qk
+Qk
+Qk
+Qk
+Qk
+Qk
+dl
+dl
+RM
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+RM
+Es
+Es
+RM
+Es
+Es
+RM
+Es
+Es
+RM
+Es
+Es
+Es
+Es
+Es
+Es
+sp
+Qw
+Qw
+Qw
+Qw
+Qw
+Qw
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+dl
+dl
+dl
+"}
+(35,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+Qk
+Qk
+qI
+qI
+qI
+Qk
+Qk
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+RM
+Es
+Es
+Es
+Es
+Es
+Es
+cj
+Es
+Es
+RM
+Es
+Es
+RM
+Es
+Es
+RM
+Es
+Es
+RM
+Es
+Es
+Es
+Es
+Es
+Es
+sp
+Qw
+Qw
+Qw
+Qw
+Qw
+Qw
+RM
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+dl
+dl
+dl
+dl
+dl
+Te
+Te
+dl
+dl
+dl
+"}
+(36,1,1) = {"
+dl
+dl
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+Qk
+Qk
+Qk
+Qk
+Qk
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+RM
+Es
+Es
+Es
+Es
+Es
+cf
+cj
+Es
+Es
+RM
+Es
+Es
+RM
+Es
+Es
+ef
+Es
+Es
+RM
+Es
+Es
+Es
+Es
+Es
+Es
+sp
+Qw
+Qw
+Qw
+Qw
+Qw
+Qw
+RM
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+Te
+dl
+dl
+dl
+dl
+"}
+(37,1,1) = {"
+dl
+dl
+Te
+eZ
+dl
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+Qk
+EQ
+EQ
+EQ
+Qk
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+RM
+Es
+Es
+Es
+Es
+cj
+cj
+cj
+Es
+Es
+RM
+Es
+Es
+RM
+RM
+ef
+RM
+ef
+RM
+RM
+RM
+ef
+RM
+RM
+RM
+RM
+RM
+Qw
+Qw
+RM
+RM
+tK
+RM
+RM
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(38,1,1) = {"
+dl
+dl
+dl
+Te
+dl
+eZ
+zR
+zR
+zR
+Qk
+Qk
+Qk
+EQ
+hd
+EQ
+Qk
+Qk
+Qk
+dl
+dl
+dl
+dl
+dl
+dl
+RM
+Es
+Es
+cj
+cj
+cj
+cj
+Es
+Es
+Es
+RM
+Es
+Es
+ef
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+ef
+Es
+Es
+ef
+Qw
+Qw
+RM
+en
+en
+RM
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+eZ
+tW
+tW
+eZ
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(39,1,1) = {"
+dl
+dl
+dl
+Te
+dl
+eZ
+zR
+zR
+zR
+Qk
+EQ
+Qk
+EQ
+EQ
+EQ
+Qk
+EQ
+Qk
+dl
+dl
+dl
+dl
+dl
+dl
+RM
+Es
+cf
+cj
+cj
+cj
+Es
+Es
+Es
+Es
+RM
+Es
+Es
+RM
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+RM
+Es
+Es
+RM
+Qw
+Qw
+RM
+en
+en
+RM
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+eZ
+eZ
+eZ
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(40,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+eZ
+zR
+zR
+zR
+Qk
+EQ
+Qk
+EQ
+EQ
+EQ
+Qk
+EQ
+Qk
+dl
+dl
+dl
+dl
+dl
+dl
+RM
+Es
+cj
+cj
+cj
+Es
+Es
+Es
+Es
+Es
+RM
+Es
+Es
+ef
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+ef
+Es
+Es
+ef
+Qw
+Qw
+RM
+en
+en
+RM
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+eZ
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(41,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+eZ
+zR
+zR
+zR
+Qk
+EQ
+Qk
+EQ
+EQ
+EQ
+Qk
+EQ
+Qk
+dl
+dl
+dl
+dl
+dl
+dl
+RM
+cj
+cj
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+RM
+Es
+Es
+RM
+Es
+Es
+RM
+RM
+RM
+RM
+RM
+Es
+Es
+RM
+RM
+RM
+RM
+RM
+RM
+en
+en
+en
+RM
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+eZ
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(42,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+eZ
+zR
+zR
+zR
+Qk
+EQ
+Qk
+EQ
+EQ
+EQ
+Qk
+EQ
+Qk
+dl
+dl
+dl
+dl
+dl
+dl
+RM
+cj
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+RM
+RM
+RM
+RM
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+RM
+en
+en
+en
+en
+RM
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+eZ
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(43,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+eZ
+zR
+zR
+zR
+Qk
+EQ
+Qk
+EQ
+EQ
+EQ
+Qk
+EQ
+Qk
+dl
+dl
+dl
+dl
+dl
+dl
+RM
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+sA
+Es
+sA
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+wz
+en
+en
+en
+en
+RM
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+eZ
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(44,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+eZ
+RM
+GV
+RM
+Qk
+Qk
+Qk
+Qk
+gz
+Qk
+Qk
+Qk
+Qk
+dl
+dl
+dl
+dl
+dl
+dl
+RM
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+sA
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+RM
+en
+en
+en
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+eZ
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(45,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+eZ
+zR
+zR
+zR
+zR
+zR
+RM
+Fe
+Fe
+Fe
+Fe
+Fe
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+Es
+Es
+Es
+RM
+RM
+RM
+RM
+RM
+Es
+Es
+Es
+RM
+RM
+ef
+RM
+RM
+RM
+RM
+RM
+RM
+en
+en
+en
+tq
+tW
+tW
+tW
+tW
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+eZ
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(46,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+eZ
+zR
+zR
+zR
+zR
+zR
+RM
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+en
+en
+en
+dl
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+tW
+eZ
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(47,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+eZ
+zR
+zR
+zR
+zR
+zR
+RM
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+RM
+Es
+Es
+Es
+ef
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+ef
+Es
+Es
+Es
+ef
+Es
+Es
+Es
+ef
+Es
+UA
+Es
+RM
+en
+en
+en
+RM
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+eZ
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(48,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+eZ
+zR
+zR
+zR
+zR
+zR
+GV
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+ef
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+RM
+RM
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+Te
+Te
+eZ
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(49,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+eZ
+zR
+zR
+zR
+zR
+zR
+RM
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+Fe
+dl
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+RM
+ef
+RM
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+tW
+tW
+Te
+eZ
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(50,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+eZ
+zR
+zR
+zR
+zR
+zR
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+Es
+Es
+Es
+ef
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+Es
+kU
+Es
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+Te
+Te
+eZ
+eZ
+eZ
+tW
+tW
+tW
+tW
+eZ
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(51,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+Te
+eZ
+eZ
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+Te
+Te
+Te
+eZ
+eZ
+eZ
+eZ
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+Es
+Es
+Es
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+Te
+Te
+Te
+Te
+eZ
+eZ
+tW
+tW
+eZ
+eZ
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(52,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+RM
+eZ
+eZ
+eZ
+eZ
+eZ
+Te
+Te
+Te
+Te
+Te
+Te
+eZ
+tW
+tW
+eZ
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(53,1,1) = {"
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+eZ
+eZ
+eZ
+eZ
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(54,1,1) = {"
+dl
+dl
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(55,1,1) = {"
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(56,1,1) = {"
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+Te
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(57,1,1) = {"
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(58,1,1) = {"
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(59,1,1) = {"
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}
+(60,1,1) = {"
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+dl
+"}

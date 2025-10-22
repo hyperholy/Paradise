@@ -408,3 +408,10 @@
 	description = "A site containing a cache of alien design, who knows what valuable technology is hiding inside?"
 	never_spawn_on_the_same_level = list("alien_cache_site")
 	allow_duplicates = FALSE
+
+/datum/map_template/ruin/space/bloodcult
+	id = "bloodcult"
+	suffix = "bloodcult.dmm"
+	name = "Eldritch Research Outpost"
+	description = "A research outpost set up to observe an eldritch rift phenomena on site, after series of anomaly spikes radio communications have gone silent, the asteroid exhibits a faint red glow when it passes behind the shadow of lavaland."
+	allow_duplicates = FALSE

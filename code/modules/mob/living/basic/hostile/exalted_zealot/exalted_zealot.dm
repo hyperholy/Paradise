@@ -32,16 +32,16 @@ fight stages: 1000hp-751hp -
 /mob/living/basic/exalted_zealot
 	name = "Exalted Zealot"
 	desc = "if i forgot to fill this in tell me"
-	icon = "fill this in"
-	icon_state ="exaltedzealot"
-	icon_dead = "exaltedzealot_dead" //Does not actually exist, del_on_death
-	death_sound = 'something'
+	icon = 'icons/mob/simple_human.dmi'
+	icon_state = "exaltedchainsaw"
+	icon_dead = "exalted_dead" //Does not actually exist, del_on_death
+	death_sound = 'sound/misc/demon_dies.ogg'
 	unsuitable_atmos_damage = 0
 	unsuitable_cold_damage = 0
 	unsuitable_heat_damage = 0
-	attack_verb_continuous =
-	attack_verb_simple =
-	attack_sound =
+	attack_verb_continuous = "saws"
+	attack_verb_simple = "saw"
+	attack_sound = 'sound/weapons/chainsaw.ogg'
 	health = 1000
 	speed = 4
 	obj_damage = 60
@@ -54,7 +54,6 @@ fight stages: 1000hp-751hp -
 	melee_attack_cooldown_max = 2.5 SECONDS
 	damage_coeff = list(BRUTE = 1, BURN = 2, TOX = 0, STAMINA = 0, OXY = 0)
 	loot = list()
-	step_type = //sound
 	ai_controller = /datum/ai_controller/basic_controller/exalted
 	var/return_turf = null //stands here menacingly during certain abilities, if none, just stay idle
 	var/portal_turfs = list() //from where the portals that spew shit appear
@@ -122,8 +121,9 @@ fight stages: 1000hp-751hp -
 
 /datum/ai_behavior/exalted/shotgun_blast/perform(seconds_per_tick, datum/ai_controller/controller, target_key)
 	. = ..()
+	boss.icon_state = "exaltedshotgun"
 	//update icon appearance to bear shotgun
-	sleep(some time) //warning!!!!
+	sleep(0.5 SECONDS) //warning!!!!
 	var/datum/component/ranged_attacks/comp = boss.GetComponent(/datum/component/ranged_attacks)
 	comp.casing_type = Pick(casing_list)
 	var/mob/living/carbon/human/target = controller.blackboard[target_key]
@@ -134,6 +134,7 @@ fight stages: 1000hp-751hp -
 
 /datum/ai_behavior/exalted/shotgun_blast/finish_action(datum/ai_controller/controller, succeeded, target_key)
 	. = ..()
+	boss.icon_state = "exaltedchainsaw"
 	//change icon back to chainsaw
 	if(!succeeded)
 		controller.clear_blackboard_key(target_key)
