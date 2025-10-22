@@ -409,6 +409,19 @@
 	never_spawn_on_the_same_level = list("alien_cache_site")
 	allow_duplicates = FALSE
 
+/datum/map_template/ruin/space/telecoms_shuttle
+	id = "telecoms_shuttle"
+	suffix = "telecoms_shuttle.dmm"
+	name = "Telecommunications Shuttle"
+	description = "A small shuttle containing resources for a telecoms relay and some medical supplies."
+	allow_duplicates = FALSE
+
+/datum/map_template/ruin/space/engineering_vessel
+	id = "engineering_vessel"
+	suffix = "engineering_vessel.dmm"
+	name = "Engineering Vessel"
+	description = "A small vessel able to have a telecoms relay built inside of it, as well as some miscellaneous cargo."
+
 /datum/map_template/ruin/space/bloodcult
 	id = "bloodcult"
 	suffix = "bloodcult.dmm"
