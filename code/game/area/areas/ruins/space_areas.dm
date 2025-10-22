@@ -308,3 +308,10 @@
 	name = "Nanotrasen Bluespace Relay #[rand(1, 1000)]" //Give it a random relay name
 	return ..()
 
+/area/ruin/space/bloodcult
+	name = "Eldritch Anomaly Outpost"
+	icon_state = "away"
+
+/area/ruin/space/bloodcult/boss
+	name = "Eldritch Outpost Arena"
+	icon_state = "red"

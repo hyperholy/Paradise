@@ -2503,6 +2503,7 @@
 #include "code\modules\mob\living\basic\hostile\alien\alien_mob_maid.dm"
 #include "code\modules\mob\living\basic\hostile\alien\alien_mob_queen.dm"
 #include "code\modules\mob\living\basic\hostile\alien\alien_mob_sentinel.dm"
+#include "code\modules\mob\living\basic\hostile\exalted_zealot\exalted_zealot.dm"
 #include "code\modules\mob\living\basic\hostile\giant_spider\giant_spider.dm"
 #include "code\modules\mob\living\basic\hostile\giant_spider\giant_spider_actions.dm"
 #include "code\modules\mob\living\basic\hostile\giant_spider\giant_spider_ai.dm"

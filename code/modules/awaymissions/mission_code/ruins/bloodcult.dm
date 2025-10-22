@@ -1,6 +1,5 @@
 /datum/outfit/dead_cultist
 	name = "Dead Cultist"
-
 	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/hooded/cultrobes/alt
 	shoes = /obj/item/clothing/shoes/cult
