@@ -58,6 +58,9 @@ fight stages: 1000hp-751hp -
 
 /mob/living/basic/exalted_zealot/Initialize(mapload)
 	. = ..()
+	return_turf = get_turf(src)
+	if(get_area_name(return_turf) == "Eldritch Outpost Arena")
+		
 	//something loot here
 
 /datum/ai_controller/basic_controller/exalted
