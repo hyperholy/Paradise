@@ -60,7 +60,7 @@ fight stages: 1000hp-751hp -
 	. = ..()
 	return_turf = get_turf(src)
 	if(get_area_name(return_turf) == "Eldritch Outpost Arena")
-		
+		return_turf = return_turf //shut up
 	//something loot here
 
 /datum/ai_controller/basic_controller/exalted
