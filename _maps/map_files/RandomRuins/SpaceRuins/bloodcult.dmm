@@ -27,9 +27,7 @@
 "aj" = (
 /obj/structure/railing,
 /obj/structure/window/basic,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/plasteel/full,
 /area/ruin/space/bloodcult)
 "aV" = (
 /obj/item/flag/cult,
@@ -111,13 +109,16 @@
 /obj/structure/railing/corner{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/plasteel/full,
 /area/ruin/space/bloodcult)
 "dv" = (
 /obj/machinery/door/airlock,
-/turf/simulated/wall,
+/turf/simulated/floor/plasteel/grid,
+/area/ruin/space/bloodcult)
+"dx" = (
+/turf/simulated/floor/plasteel/side{
+	dir = 8
+	},
 /area/ruin/space/bloodcult)
 "dF" = (
 /obj/machinery/recharge_station,
@@ -155,11 +156,7 @@
 	},
 /area/ruin/space/bloodcult)
 "er" = (
-/obj/machinery/door/airlock,
-/turf/simulated/floor/plasteel{
-	dir = 8;
-	icon_state = "darkred"
-	},
+/turf/simulated/floor/plasteel/grid,
 /area/ruin/space/bloodcult)
 "eC" = (
 /obj/structure/sign/poster/official/anniversary_vintage_reprint/directional/north,
@@ -183,8 +180,8 @@
 /obj/structure/chair/sofa/bench{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/side{
+	dir = 8
 	},
 /area/ruin/space/bloodcult)
 "fs" = (
@@ -236,9 +233,7 @@
 /obj/structure/window/basic{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/plasteel/full,
 /area/ruin/space/bloodcult)
 "fU" = (
 /obj/structure/railing/corner{
@@ -271,9 +266,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/plasteel/side,
 /area/ruin/space/bloodcult)
 "hR" = (
 /obj/effect/decal/cleanable/blood/splatter{
@@ -322,8 +315,8 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/corner{
+	dir = 8
 	},
 /area/ruin/space/bloodcult)
 "iS" = (
@@ -343,8 +336,8 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/side{
+	dir = 4
 	},
 /area/ruin/space/bloodcult)
 "jk" = (
@@ -413,9 +406,7 @@
 /obj/structure/table,
 /obj/item/storage/box/donkpockets,
 /obj/structure/sign/poster/official/anniversary_vintage_reprint/directional/north,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/plasteel/side,
 /area/ruin/space/bloodcult)
 "lk" = (
 /obj/effect/decal/cleanable/blood/splatter{
@@ -479,9 +470,7 @@
 	icon_state = "trails_1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkred"
-	},
+/turf/simulated/floor/plasteel/side,
 /area/ruin/space/bloodcult)
 "nZ" = (
 /obj/structure/window/plasmareinforced{
@@ -498,8 +487,8 @@
 	icon_state = "trails_1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/corner{
+	dir = 4
 	},
 /area/ruin/space/bloodcult)
 "ot" = (
@@ -522,12 +511,25 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/catwalk,
+/turf/simulated/floor/plasteel/corner{
+	dir = 1
+	},
+/area/ruin/space/bloodcult)
+"oX" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel/full,
 /area/ruin/space/bloodcult)
 "pt" = (
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkred"
+/turf/simulated/floor/plasteel/side{
+	dir = 4
+	},
+/area/ruin/space/bloodcult)
+"pL" = (
+/turf/simulated/floor/plasteel/corner{
+	dir = 4
 	},
 /area/ruin/space/bloodcult)
 "qc" = (
@@ -548,9 +550,7 @@
 	icon_state = "trails_1";
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/catwalk,
 /area/ruin/space/bloodcult)
 "qr" = (
 /obj/effect/decal/cleanable/blood/splatter{
@@ -567,9 +567,7 @@
 	name = "Glass Door"
 	},
 /obj/item/desk_bell,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/plasteel/side,
 /area/ruin/space/bloodcult)
 "qI" = (
 /turf/simulated/floor/indestructible/necropolis,
@@ -583,9 +581,15 @@
 /area/ruin/space/bloodcult)
 "qO" = (
 /obj/structure/sign/poster/official/cleanliness/directional/south,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/full,
+/area/ruin/space/bloodcult)
+"ri" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	color = "red";
+	icon_state = "trails_1";
+	dir = 8
 	},
+/turf/simulated/floor/plasteel/grid,
 /area/ruin/space/bloodcult)
 "rr" = (
 /obj/item/bedsheet/black,
@@ -627,8 +631,8 @@
 /obj/machinery/recharger,
 /obj/machinery/light/small,
 /obj/effect/spawner/random/maintenance,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/corner{
+	dir = 4
 	},
 /area/ruin/space/bloodcult)
 "sk" = (
@@ -636,9 +640,7 @@
 /obj/structure/window/basic{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/plasteel/corner,
 /area/ruin/space/bloodcult)
 "sm" = (
 /turf/space,
@@ -743,9 +745,7 @@
 /area/ruin/space/bloodcult)
 "vs" = (
 /obj/machinery/door/airlock/cult/friendly,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/engine/cult,
 /area/ruin/space/bloodcult)
 "vH" = (
 /obj/effect/decal/cleanable/blood/splatter{
@@ -806,8 +806,8 @@
 	color = "red";
 	icon_state = "trails_1"
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/side{
+	dir = 4
 	},
 /area/ruin/space/bloodcult)
 "xw" = (
@@ -815,19 +815,14 @@
 /turf/simulated/wall,
 /area/ruin/space/bloodcult)
 "xM" = (
-/obj/machinery/door/poddoor/multi_tile/impassable{
-	dir = 4
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/corner{
+	dir = 1
 	},
 /area/ruin/space/bloodcult)
 "yx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/walllocker/emerglocker/directional/north,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/plasteel/side,
 /area/ruin/space/bloodcult)
 "ze" = (
 /obj/structure/holosign/barrier,
@@ -837,9 +832,7 @@
 /obj/structure/chair/office/dark{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/plasteel/side,
 /area/ruin/space/bloodcult)
 "zR" = (
 /turf/simulated/floor/plasteel{
@@ -853,9 +846,7 @@
 	icon_state = "trails_1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkred"
-	},
+/turf/simulated/floor/plasteel/side,
 /area/ruin/space/bloodcult)
 "Aw" = (
 /obj/machinery/computer/arcade/battle{
@@ -918,8 +909,8 @@
 "Ck" = (
 /obj/structure/table,
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkred"
+/turf/simulated/floor/plasteel/side{
+	dir = 8
 	},
 /area/ruin/space/bloodcult)
 "CY" = (
@@ -942,9 +933,7 @@
 	icon_state = "trails_1";
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/wood,
 /area/ruin/space/bloodcult)
 "Dw" = (
 /obj/structure/railing{
@@ -952,13 +941,14 @@
 	},
 /turf/simulated/floor/plating/asteroid/basalt/airless,
 /area/ruin/space/bloodcult)
+"DM" = (
+/turf/simulated/floor/plasteel/side,
+/area/ruin/space/bloodcult)
 "DV" = (
 /obj/structure/table,
 /obj/machinery/kitchen_machine/microwave,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/plasteel/side,
 /area/ruin/space/bloodcult)
 "DY" = (
 /obj/machinery/light/small{
@@ -974,6 +964,10 @@
 	dir = 5
 	},
 /turf/simulated/floor/wood,
+/area/ruin/space/bloodcult)
+"Ee" = (
+/obj/structure/table,
+/turf/simulated/floor/plasteel/full,
 /area/ruin/space/bloodcult)
 "Eq" = (
 /obj/machinery/light/small{
@@ -1009,6 +1003,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet,
+/area/ruin/space/bloodcult)
+"EK" = (
+/turf/simulated/floor/plasteel/side{
+	dir = 1
+	},
 /area/ruin/space/bloodcult)
 "EQ" = (
 /turf/simulated/floor/engine/cult,
@@ -1098,8 +1097,8 @@
 	dir = 4;
 	name = "Glass Door"
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/side{
+	dir = 1
 	},
 /area/ruin/space/bloodcult)
 "HI" = (
@@ -1109,8 +1108,8 @@
 	icon_state = "trails_1";
 	dir = 6
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/corner{
+	dir = 4
 	},
 /area/ruin/space/bloodcult)
 "HO" = (
@@ -1136,8 +1135,8 @@
 	},
 /area/ruin/space/bloodcult)
 "IM" = (
-/turf/simulated/floor/plasteel{
-	icon_state = "darkred"
+/turf/simulated/floor/plasteel/side{
+	dir = 4
 	},
 /area/ruin/space/bloodcult)
 "IV" = (
@@ -1151,6 +1150,10 @@
 	dir = 1
 	},
 /turf/simulated/floor/plating/asteroid/basalt/airless,
+/area/ruin/space/bloodcult)
+"Jc" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/catwalk,
 /area/ruin/space/bloodcult)
 "Jk" = (
 /obj/structure/window/plasmabasic{
@@ -1191,8 +1194,8 @@
 /obj/structure/window/basic{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/corner{
+	dir = 4
 	},
 /area/ruin/space/bloodcult)
 "KR" = (
@@ -1376,9 +1379,8 @@
 /turf/simulated/floor/engine/cult,
 /area/ruin/space/bloodcult)
 "PY" = (
-/obj/machinery/door/airlock,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkred"
+/turf/simulated/floor/plasteel/corner{
+	dir = 8
 	},
 /area/ruin/space/bloodcult)
 "Qk" = (
@@ -1474,16 +1476,14 @@
 /turf/simulated/floor/engine/cult,
 /area/ruin/space/bloodcult)
 "Um" = (
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
-	},
+/turf/simulated/floor/plasteel/corner,
 /area/ruin/space/bloodcult)
 "Uu" = (
 /obj/structure/filingcabinet,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/official/high_class_martini/directional/east,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/corner{
+	dir = 1
 	},
 /area/ruin/space/bloodcult)
 "Uy" = (
@@ -1530,8 +1530,8 @@
 /area/ruin/space/bloodcult)
 "US" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/side{
+	dir = 1
 	},
 /area/ruin/space/bloodcult)
 "UW" = (
@@ -1563,10 +1563,7 @@
 /turf/simulated/floor/wood,
 /area/ruin/space/bloodcult)
 "VH" = (
-/turf/simulated/floor/plasteel{
-	dir = 8;
-	icon_state = "darkred"
-	},
+/turf/simulated/floor/plasteel/full,
 /area/ruin/space/bloodcult)
 "VJ" = (
 /obj/effect/decal/cleanable/blood/splatter{
@@ -1578,7 +1575,7 @@
 /area/ruin/space/bloodcult)
 "VU" = (
 /obj/machinery/door/poddoor/multi_tile/quad,
-/turf/space,
+/turf/simulated/floor/engine/cult,
 /area/ruin/space/bloodcult)
 "WU" = (
 /obj/effect/rune{
@@ -1616,10 +1613,7 @@
 /obj/machinery/door/poddoor/multi_tile/impassable{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
-	dir = 8;
-	icon_state = "darkblue"
-	},
+/turf/simulated/floor/plasteel/grid,
 /area/ruin/space/bloodcult)
 "XB" = (
 /obj/structure/railing{
@@ -1668,8 +1662,8 @@
 	color = "red";
 	icon_state = "xsplatter1"
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkgrey"
+/turf/simulated/floor/plasteel/corner{
+	dir = 8
 	},
 /area/ruin/space/bloodcult)
 "YY" = (
@@ -2083,7 +2077,7 @@ Te
 Te
 Te
 Te
-Te
+sm
 Te
 Te
 Te
@@ -2391,9 +2385,9 @@ eZ
 eZ
 eZ
 RM
-VH
-VH
-VH
+Um
+IM
+pL
 RM
 bu
 bu
@@ -2473,9 +2467,9 @@ eZ
 eZ
 eZ
 RM
+DM
 VH
-VH
-VH
+EK
 RM
 bu
 bu
@@ -2555,9 +2549,9 @@ RM
 RM
 RM
 RM
+DM
 VH
-VH
-VH
+EK
 RM
 bu
 bu
@@ -2572,8 +2566,8 @@ RM
 RM
 RM
 RM
-IM
-IM
+Um
+pL
 RM
 RM
 eZ
@@ -2634,29 +2628,29 @@ cD
 cD
 cD
 RM
-VH
-VH
+Um
+pL
 RM
+DM
 VH
-VH
-VH
-RM
-RM
+EK
 RM
 RM
 RM
+RM
+RM
+Um
 VH
-VH
-VH
-VH
+IM
+IM
+dv
+IM
+IM
+IM
+IM
+xM
 PY
-IM
-IM
-IM
-IM
-IM
-IM
-IM
+pL
 RM
 eZ
 tW
@@ -2716,29 +2710,29 @@ cD
 cD
 cD
 RM
-VH
-VH
+DM
+EK
 dv
+DM
 VH
-VH
-VH
+EK
 RM
-VH
-VH
-VH
+Um
+IM
+pL
 RM
+DM
 VH
-VH
-VH
-VH
+Um
+xM
 RM
-IM
-IM
-IM
-IM
-IM
-IM
-IM
+dx
+dx
+dx
+pL
+VH
+Um
+xM
 RM
 eZ
 tW
@@ -2798,28 +2792,28 @@ cD
 cD
 cD
 RM
-VH
-VH
+DM
+EK
 RM
-VH
-VH
-VH
+PY
+dx
+xM
 RM
+DM
 VH
-VH
-VH
+EK
 dv
+DM
 VH
-VH
-VH
+EK
 RM
 RM
 RM
 RM
 RM
-IM
-IM
-IM
+PY
+Um
+xM
 RM
 RM
 eZ
@@ -2880,27 +2874,27 @@ cD
 cD
 cD
 RM
-VH
-VH
+DM
+EK
 RM
 RM
 RM
 RM
 RM
+DM
 VH
-VH
-VH
+EK
 dv
-VH
-VH
-VH
+DM
 VH
 PY
 IM
+dv
 IM
+pL
 RM
 RM
-PY
+dv
 RM
 RM
 eZ
@@ -2962,28 +2956,28 @@ cD
 cD
 cD
 dv
-VH
-VH
-VH
-VH
-VH
-VH
-dv
-VH
-VH
-VH
-RM
-VH
-VH
-VH
-VH
+DM
 PY
 IM
 IM
+IM
+pL
+dv
+PY
+dx
+xM
 RM
-IM
-IM
-IM
+DM
+VH
+Um
+dx
+dv
+pL
+EK
+RM
+Um
+PY
+pL
 RM
 eZ
 eZ
@@ -3044,28 +3038,28 @@ cD
 cD
 cD
 RM
+DM
 VH
 VH
 VH
 VH
-VH
-VH
+EK
 RM
 RM
 RM
 RM
 RM
+DM
 VH
-VH
-VH
+EK
 RM
 RM
-PY
-PY
+dv
+dv
 RM
-IM
-IM
-IM
+DM
+Um
+xM
 RM
 eZ
 eZ
@@ -3126,27 +3120,27 @@ cD
 cD
 cD
 dv
+DM
 VH
 VH
 VH
 VH
+PY
+IM
+IM
+IM
+IM
+IM
+xM
 VH
-VH
-VH
-VH
-VH
-VH
-VH
-VH
-VH
-VH
-VH
+PY
+pL
 RM
-IM
-IM
+DM
+PY
 pt
-IM
-IM
+xM
+EK
 RM
 RM
 eZ
@@ -3208,27 +3202,27 @@ cD
 cD
 cD
 RM
+PY
+dx
+dx
+dx
+dx
+dx
+dx
+dx
+dx
+pL
 VH
 VH
 VH
 VH
-VH
-VH
-VH
-VH
-VH
-VH
-VH
-VH
-VH
-VH
-VH
+EK
 RM
-IM
-IM
-pt
-IM
-IM
+DM
+VH
+Ee
+VH
+EK
 RM
 RM
 eZ
@@ -3290,28 +3284,28 @@ cD
 cD
 cD
 RM
-er
+dv
 RM
 RM
-er
+dv
 RM
 RM
-er
+dv
 RM
 RM
+DM
 VH
 VH
 VH
 VH
-VH
-VH
+EK
 RM
 An
-IM
+Um
 Ck
-IM
-IM
-IM
+pL
+PY
+pL
 RM
 eZ
 eZ
@@ -3372,28 +3366,28 @@ cD
 cD
 cD
 RM
-VH
-VH
+DM
+pL
 RM
-VH
-VH
+DM
+pL
 RM
-VH
-VH
+DM
+pL
 RM
+DM
 VH
-VH
-VH
-VH
-VH
-VH
+Um
+dx
+dx
+xM
 RM
 nK
-IM
+EK
 RM
-IM
-IM
-IM
+PY
+dx
+xM
 RM
 eZ
 eZ
@@ -3454,24 +3448,24 @@ cD
 cD
 cD
 RM
-VH
-VH
-RM
-VH
-VH
-RM
-VH
-VH
-RM
-VH
-VH
-VH
-Rg
-Rg
-Rg
-Rg
-oo
+PY
 xM
+RM
+PY
+xM
+RM
+PY
+xM
+RM
+PY
+dx
+xM
+Rg
+Rg
+Rg
+Rg
+ri
+Xn
 Rg
 RM
 RM
@@ -3553,7 +3547,7 @@ sk
 je
 xf
 HI
-Um
+VH
 sf
 Rg
 AN
@@ -3635,7 +3629,7 @@ DV
 qO
 Rg
 zN
-Um
+VH
 Uu
 AN
 AN
@@ -3714,7 +3708,7 @@ rr
 lD
 RM
 lf
-Um
+VH
 uP
 qE
 HH
@@ -3796,8 +3790,8 @@ RM
 cc
 RM
 hF
-Um
-je
+VH
+oX
 oa
 uv
 jM
@@ -3876,7 +3870,7 @@ Xj
 ND
 ZG
 SG
-Lt
+Jc
 oa
 jk
 Uy
@@ -3892,7 +3886,7 @@ cj
 ze
 VJ
 oJ
-sm
+EQ
 tW
 tW
 tW
@@ -3964,7 +3958,7 @@ aj
 Kt
 rY
 fL
-Um
+EK
 AN
 Gz
 VJ
@@ -3974,7 +3968,7 @@ cj
 ze
 aW
 ae
-sm
+EQ
 tW
 tW
 tW
@@ -4056,7 +4050,7 @@ qr
 eh
 Ey
 EQ
-sm
+EQ
 Gc
 Gc
 Gc
@@ -4119,14 +4113,14 @@ wu
 ot
 HO
 wu
-Lt
+vj
 eg
 Vp
 RM
 iG
 oo
-Um
-Um
+VH
+VH
 Um
 oP
 AN
@@ -4195,7 +4189,7 @@ vb
 XB
 sX
 sP
-Lt
+vj
 JZ
 RM
 vj
@@ -4209,7 +4203,7 @@ xw
 YX
 fr
 Kz
-Um
+EK
 xw
 AN
 AN
@@ -4290,7 +4284,7 @@ RM
 RM
 xw
 xw
-Qw
+er
 Xn
 RM
 YB

@@ -135,7 +135,6 @@ fight stages: 1000hp-751hp -
 	if(QDELETED(target))
 		return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_FAILED
 	boss.icon_state = "exaltedshotgun"
-	//update icon appearance to bear shotgun
 	sleep(0.5 SECONDS) //warning!!!!
 	var/datum/component/ranged_attacks/comp = boss.GetComponent(/datum/component/ranged_attacks)
 	comp.casing_type = pick(casing_list)
