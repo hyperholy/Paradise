@@ -21,6 +21,7 @@
 	new_attack_chain = TRUE
 	actions_types = list(/datum/action/item_action/toggle_light)
 	var/list/trophies = list()
+	var/list/beamed_turfs = list()
 	var/force_wielded = 18
 	var/datum/beam/current_beam
 	var/beam_length = 3
@@ -70,7 +71,35 @@
 
 /obj/item/convergence_axe/ranged_interact_with_atom(atom/target, mob/living/user)
 	. = ..()
-	current_beam = Beam(target, "tracer_beam", 'icons/obj/projectiles_tracer.dmi', beam_uptime, beam_length, use_get_turf = TRUE)
+	fire_laser(target, user)
+
+
+/obj/item/convergence_axe/proc/fire_laser(atom/target, mob/living/user)
+	current_beam = Beam(target, "tracer_beam", 'icons/obj/projectiles_tracer.dmi', beam_uptime, maxdistance = 10, clip_distance = beam_length, use_get_turf = TRUE)
+	if(length(beamed_turfs) > 0)
+		handle_convergence(target)
+	for(var/b in current_beam.elements)
+		var/turf/t = get_turf(b)
+		if(beamed_turfs.Find(t) > 0)
+			beamed_turfs[t] += 1
+		else
+			beamed_turfs[t] = 1
+
+/obj/item/convergence_axe/proc/handle_convergence(atom/target)
+	var/total_convergences = 0
+	var/turf/special_turf
+	for(var/turf/T in beamed_turfs)
+		if(beamed_turfs[T] > 1)
+			total_convergences += 1
+			special_turf = T
+	if(total_convergences > 1) // must hit at least one
+		beamed_turfs.Cut()
+		return
+	for(var/mob/living/dietarget in special_turf)
+		if(ismob(dietarget))
+			dietarget.gib()
+			beamed_turfs.Cut()
+	//do shit here
 
 /obj/item/convergence_trophy
 	name = "magenta and black trophy"
