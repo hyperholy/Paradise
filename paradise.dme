@@ -2383,6 +2383,7 @@
 #include "code\modules\mining\salvage_redemption.dm"
 #include "code\modules\mining\satchel_ore_boxdm.dm"
 #include "code\modules\mining\shelters.dm"
+#include "code\modules\mining\equipment\convergence_axe.dm"
 #include "code\modules\mining\equipment\explorer_gear.dm"
 #include "code\modules\mining\equipment\hardmode_grenade.dm"
 #include "code\modules\mining\equipment\kinetic_crusher.dm"
