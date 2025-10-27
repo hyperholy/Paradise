@@ -58,6 +58,8 @@ fight stages: 1000hp-751hp -
 
 /mob/living/basic/exalted_zealot/Initialize(mapload)
 	. = ..()
+	for(var/obj/effect/landmark/exalted_portal/portal in GLOB.landmarks_list)
+		portal_turfs += portal
 	return_turf = get_turf(src)
 	if(get_area_name(return_turf) == "Eldritch Outpost Arena")
 		return_turf = return_turf //shut up
@@ -149,7 +151,7 @@ fight stages: 1000hp-751hp -
 	if(!succeeded)
 		controller.clear_blackboard_key(target_key)
 
-/*
+
 /datum/ai_behavior/exalted/portal_shoot
 	action_cooldown = 15 SECONDS
 
@@ -169,13 +171,16 @@ fight stages: 1000hp-751hp -
 	var/mob/living/carbon/human/target = controller.blackboard[target_key]
 	if(QDELETED(target))
 		return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_FAILED
-	for(var/turf in boss.portal_turfs)
+	for(var/portal in boss.portal_turfs)
 		//callback to indiv portal handler, makes portal, waits, launches the spear
 	return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_SUCCEEDED
 
 /datum/ai_behavior/exalted/portal_shoot/finish_action(datum/ai_controller/controller, succeeded, target_key)
 	. = ..()
 	//call thing to KILL portals and spears
+
+/datum/ai_behavior/portal_shoot/proc/launch_shit(obj/effect/landmark/exalted_portal)
+	var/obj/effect/portal
 
 /datum/ai_behavior/exalted/zap_pylons
 
@@ -184,4 +189,4 @@ fight stages: 1000hp-751hp -
 /datum/ai_behavior/exalted/chainsaw_charge
 
 /datum/ai_behavior/exalted/lifesteal_dodge
-*/
+

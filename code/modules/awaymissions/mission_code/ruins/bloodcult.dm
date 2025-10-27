@@ -195,3 +195,12 @@
 		to_heal.adjustHealth(-damage * 2) //heals 40
 
 // /datum/ai_planning_subtree/maintain_distance/cultist/shotgun //shotguns are stronger closer up, why run?
+
+/obj/effect/landmark/exalted_portal
+	name = "exalted portal landmark"
+
+/obj/effect/portal/cult_ruin
+	name = "torn reality"
+	desc = "something seems to be approaching..."
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "exalted_portal"
