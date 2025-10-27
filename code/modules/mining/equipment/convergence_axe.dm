@@ -3,8 +3,8 @@
 	name = "convergence assualt axe"
 	desc = "add words here"
 	icon = 'icons/obj/mining.dmi'
-	icon_state = 'convergence_axe'
-	base_icon_state = 'convergence_axe'
+	icon_state = "convergence_axe"
+	base_icon_state = "convergence_axe"
 	inhand_icon_state = "crusher0"
 	lefthand_file = 'icons/mob/inhands/weapons_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons_righthand.dmi'
@@ -22,6 +22,7 @@
 	actions_types = list(/datum/action/item_action/toggle_light)
 	var/list/trophies = list()
 	var/force_wielded = 18
+	var/datum/beam/current_beam
 	var/beam_length = 3
 	var/beam_uptime = 5 SECONDS
 
@@ -45,19 +46,6 @@
 	else
 		return ..()
 
-/obj/item/convergence_axe/proc/add_to(obj/item/convergence_axe/H, mob/living/user)
-	for(var/t in H.trophies)
-		var/obj/item/convergence_trophy/T = t
-		if(istype(T, denied_type) || istype(src, T.denied_type))
-			to_chat(user, "<span class='warning'>You can't seem to attach [src] to [H]. Maybe remove a few trophies?</span>")
-			return FALSE
-	if(!user.unequip(src))
-		return
-	forceMove(H)
-	H.trophies += src
-	to_chat(user, "<span class='notice'>You attach [src] to [H].</span>")
-	return TRUE
-
 /obj/item/convergence_axe/crowbar_act(mob/living/user, obj/item/I)
 	. = TRUE
 	if(!I.use_tool(src, user, 0, volume = I.tool_volume))
@@ -71,16 +59,59 @@
 		to_chat(user, "<span class=warning'>There are no trophies on [src].</span>")
 
 /obj/item/convergence_axe/attack(mob/living/target, mob/living/user)
+	if(..())
+		return FINISH_ATTACK
 	if(!HAS_TRAIT(src, TRAIT_WIELDED))
 		to_chat(user, "<span class='warning'>[src] is too heavy to use with one hand. You fumble and drop everything.</span>")
 		user.drop_r_hand()
 		user.drop_l_hand()
-		return
+		return FALSE
+	return ..()
 
-/obj/item/convergence_axe/RangedAttack(atom/A)
-	fire_laser(A)
-
-/obj/item/convergence_axe/proc/fire_laser(atom/A)
-	var/datum/beam/current_beam = src.Beam(src, A, icon_state = "solar", time = beam_uptime, max_distance = beam_length)
+/obj/item/convergence_axe/ranged_interact_with_atom(atom/target, mob/living/user)
+	. = ..()
+	current_beam = Beam(target, "tracer_beam", 'icons/obj/projectiles_tracer.dmi', beam_uptime, beam_length, use_get_turf = TRUE)
 
 /obj/item/convergence_trophy
+	name = "magenta and black trophy"
+	desc = "If you are reading this make an issue report on Github"
+	icon = 'icons/obj/lavaland/artefacts.dmi'
+	icon_state = "tail_spike"
+	var/denied_type = /obj/item/convergence_trophy
+
+/obj/item/convergence_trophy/examine(mob/living/user)
+	. = ..()
+	. += "<span class='notice'>Does [effect_desc()] when attached to a convergence assualt axe"
+
+/obj/item/convergence_trophy/proc/effect_desc()
+	return "errors"
+
+/obj/item/convergence_trophy/attack_by(obj/item/A, mob/living/user)
+	if(istype(A, /obj/item/convergence_axe))
+		add_to(A, user)
+	else
+		..()
+
+/obj/item/convergence_trophy/proc/add_to(obj/item/convergence_axe/H, mob/living/user)
+	for(var/t in H.trophies)
+		var/obj/item/convergence_trophy/T = t
+		if(istype(T, denied_type) || istype(src, T.denied_type))
+			to_chat(user, "<span class='warning'>You can't seem to attach[src] to [H]. Maybe remove a few trophies?</span>")
+			return FALSE
+	if(!user.unequip(src))
+		return
+	forceMove(H)
+	H.trophies += src
+	to_chat(user, "<span class='notice'>You attach [src] to [H].</span>")
+	return TRUE
+
+/obj/item/convergence_trophy/proc/remove_from(obj/item/convergence_axe/H, mob/living/user)
+	forceMove(get_turf(H))
+	H.trophies -= src
+	return TRUE
+
+/obj/item/convergence_trophy/Destroy()
+	if(istype(loc, /obj/item/convergence_axe))
+		var/obj/item/convergence_axe/axe = loc
+		axe.trophies -= src
+	return ..()
