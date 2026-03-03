@@ -22,6 +22,8 @@ SUBSYSTEM_DEF(mapping)
 	var/list/existing_station_areas
 	/// Types of areas that exist on the station this shift
 	var/list/existing_station_areas_types
+	/// What lavaland biome are we generating
+	var/datum/biome_theme/biome_theme
 	///What do we have as the lavaland theme today?
 	var/datum/lavaland_theme/lavaland_theme
 	///What primary cave theme we have picked for cave generation today.
@@ -97,6 +99,8 @@ SUBSYSTEM_DEF(mapping)
 	log_startup_progress("We're in the mood for [lavaland_theme.name] today...") //We load this first. In the event some nerd ever makes a surface map, and we don't have it in lavaland in the event lavaland is disabled.
 	SSblackbox.record_feedback("text", "procgen_settings", 1, "[lavaland_theme_type]")
 
+	#warn TODO: add the biome selection here instead...
+	biome_theme = new /datum/biome_theme
 	var/caves_theme_type = pick(subtypesof(/datum/caves_theme))
 	ASSERT(caves_theme_type)
 	caves_theme = new caves_theme_type
@@ -352,10 +356,12 @@ SUBSYSTEM_DEF(mapping)
 /datum/controller/subsystem/mapping/proc/procgen_lavaland()
 	var/theme_watch = start_watch()
 	log_startup_progress("Loading lavaland themes...")
-	if(lavaland_theme)
-		lavaland_theme.setup()
-	if(caves_theme)
-		caves_theme.setup()
+	#warn TODO: ADD BIOME GEN THEME HERE
+	biome_theme.setup()
+	//if(lavaland_theme)
+		//lavaland_theme.setup()
+	//if(caves_theme)
+		//caves_theme.setup()
 	log_startup_progress("Loaded lavaland themes in [stop_watch(theme_watch)]s")
 
 /datum/controller/subsystem/mapping/proc/make_maint_all_access()

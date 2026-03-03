@@ -1,5 +1,144 @@
 use byondapi::value::ByondValue;
 use dbpnoise::gen_noise;
+use noise::{Perlin, NoiseFn};
+
+const OFFSET: f32 = 0.5;
+
+#[byondapi::bind]
+fn perlin_generate_binary(
+    seed: ByondValue,
+    stamp_size: ByondValue,
+    world_size: ByondValue,
+    lower_range: ByondValue,
+    upper_range: ByondValue,
+) -> eyre::Result<ByondValue> {
+    Ok(gen_perlin_binary(
+        seed.get_string()?.parse::<u32>()?,
+        stamp_size.get_string()?.parse::<u32>()?,
+        world_size.get_string()?.parse::<u32>()?,
+        lower_range.get_string()?.parse::<f32>()?,
+        upper_range.get_string()?.parse::<f32>()?,
+    )?
+    .try_into()?)
+}
+
+fn gen_perlin_binary(
+    seed: u32,
+    stamp_size: u32,
+    world_size: u32,
+    lower_range: f32,
+    upper_range: f32,
+) -> eyre::Result<String> {
+    let noise = Perlin::new(seed);
+    let mut val: f64;
+    let mut valbool: bool;
+    let mut result = String::new();
+    for x in 0..world_size {
+        for y in 0..world_size {
+            val = noise.get([(x as f32 + OFFSET) as f64, (y as f32 + OFFSET) as f64]);
+            valbool = lower_range < (val as f32) && (val as f32) < upper_range;
+            result.push(if valbool {'1'} else {'0'});
+        }
+    }
+    Ok(result)
+}
+
+/// Generate a perlin noise map with additional control on octave count and divisor and frequency
+#[byondapi::bind]
+fn perlin_generate_advanced(
+    seed: ByondValue,
+    world_size: ByondValue,
+    frequency: ByondValue,
+    divisor: ByondValue,
+    octaves: ByondValue,
+) -> eyre::Result<ByondValue> {
+    Ok(gen_perlin_advanced(
+        seed.get_string()?.parse::<u32>()?,
+        world_size.get_string()?.parse::<u32>()?,
+        frequency.get_string()?.parse::<f32>()?,
+        divisor.get_string()?.parse::<f32>()?,
+        octaves.get_string()?.parse::<u32>()?,
+    )?
+    .try_into()?)
+}
+
+fn gen_perlin_advanced(
+    seed: u32,
+    world_size: u32,
+    frequency: f32,
+    mut divisor: f32,
+    octaves: u32,
+) -> eyre::Result<ByondValue> {
+    let noise = Perlin::new(seed);
+    if divisor == 0.0 {
+        divisor = 2_f32.powf((1 - 1 * octaves) as f32) * (-1.0 + 2_f32.powf(octaves as f32)); // 1.0, 1.5, 1.75, ...
+    }
+    let mut result = ByondValue::new_list().unwrap();
+    for x in 0..world_size {
+        for y in 0..world_size {
+            let mut sum: f64 = 0.0;
+            for octave in 0..octaves{
+                let xn: f64 = (((x as f32 + OFFSET) * (2_i32.pow(octave)) as f32) * frequency) as f64;
+                let yn: f64 = (((y as f32 + OFFSET) * (2_i32.pow(octave)) as f32) * frequency) as f64;
+                sum += 1.0 / (2_u32.pow(octave)) as f64 * noise.get([xn, yn]);
+            }
+            result.push_list(&(sum / divisor as f64).get_string()); // We want to normalise the octave addition to a range between 0 and 1
+        }
+    }
+    Ok(result)
+}
+
+/// Generate a perlin noise map with distance lerping to force an 'island' cluster
+#[byondapi::bind]
+fn perlin_generate_advanced_dlerp(
+    seed: ByondValue,
+    world_size: ByondValue,
+    frequency: ByondValue,
+    divisor: ByondValue,
+    octaves: ByondValue,
+    mix: ByondValue,
+) -> eyre::Result<ByondValue> {
+    Ok(gen_perlin_advanced_dlerp(
+        seed.get_string()?.parse::<u32>()?,
+        world_size.get_string()?.parse::<u32>()?,
+        frequency.get_string()?.parse::<f32>()?,
+        divisor.get_string()?.parse::<f32>()?,
+        octaves.get_string()?.parse::<u32>()?,
+        mix.get_string()?.parse::<f32>()?,
+    )?
+    .try_into()?)
+}
+
+fn gen_perlin_advanced_dlerp(
+    seed: u32,
+    world_size: u32,
+    frequency: f32,
+    mut divisor: f32,
+    octaves: u32,
+    mix: f32,
+) -> eyre::Result<ByondValue> {
+    let noise = Perlin::new(seed);
+    if divisor == 0.0 {
+        divisor = 2_f32.powf((1 - 1 * octaves) as f32) * (-1.0 + 2_f32.powf(octaves as f32)); // 1.0, 1.5, 1.75, ...
+    }
+    let mut result = ByondValue::new_list().unwrap();
+    for x in 0..world_size {
+        for y in 0..world_size {
+            let mut sum: f64 = 0.0;
+            let mut xn: f64 = 0.0;
+            let mut yn: f64 = 0.0;
+            for octave in 0..octaves{
+                yn = (((y as f32 + OFFSET) * (2_i32.pow(octave)) as f32) * frequency) as f64;
+                xn = (((x as f32 + OFFSET) * (2_i32.pow(octave)) as f32) * frequency) as f64;
+                sum += 1.0 / (2_u32.pow(octave)) as f64 * noise.get([xn, yn]);
+            }
+            let d: f64 = 1.0 - (1.0 - xn.powf(2.0)) * (1.0 - yn.powf(2.0));
+            let lerped: f64 = (sum / divisor as f64) + ((1.0 - d) - (sum / divisor as f64)) * mix as f64;
+            result.push_list(&(lerped).get_string()); // We want to normalise the octave addition to a range between 0 and 1
+        }
+    }
+    Ok(result)
+}
 
 #[byondapi::bind]
 fn dbp_generate(

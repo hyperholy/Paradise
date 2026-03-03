@@ -750,6 +750,7 @@
 #include "code\datums\mapping\station_maps.dm"
 #include "code\datums\mapping\templates\lavaland_map_templates.dm"
 #include "code\datums\mapping\templates\space_map_templates.dm"
+#include "code\datums\mapping\themes\biomes_theme.dm"
 #include "code\datums\mapping\themes\caves_theme.dm"
 #include "code\datums\mapping\themes\lavaland_theme.dm"
 #include "code\datums\outfits\outfit.dm"
