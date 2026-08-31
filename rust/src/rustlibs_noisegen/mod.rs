@@ -24,12 +24,12 @@ fn perlin_generate_binary(
 
 fn gen_perlin_binary(
     seed: u32,
-    stamp_size: u32,
+    _stamp_size: u32,
     world_size: u32,
     lower_range: f32,
     upper_range: f32,
 ) -> eyre::Result<String> {
-    let noise = Perlin::new(seed);
+    let noise: Perlin = Perlin::new(seed);
     let mut val: f64;
     let mut valbool: bool;
     let mut result = String::new();
@@ -68,21 +68,32 @@ fn gen_perlin_advanced(
     frequency: f32,
     mut divisor: f32,
     octaves: u32,
-) -> eyre::Result<ByondValue> {
+) -> eyre::Result<String> {
     let noise = Perlin::new(seed);
     if divisor == 0.0 {
-        divisor = 2_f32.powf((1 - 1 * octaves) as f32) * (-1.0 + 2_f32.powf(octaves as f32)); // 1.0, 1.5, 1.75, ...
+        divisor = 2.0 - 2.0_f32.powi(1 - octaves as i32); // 1.0, 1.5, 1.75, ...
     }
-    let mut result = ByondValue::new_list().unwrap();
+
+    let mut result: String = String::with_capacity((world_size * world_size) as usize);
+
     for x in 0..world_size {
         for y in 0..world_size {
-            let mut sum: f64 = 0.0;
+            let mut sum = 0.0;
+
             for octave in 0..octaves{
-                let xn: f64 = (((x as f32 + OFFSET) * (2_i32.pow(octave)) as f32) * frequency) as f64;
-                let yn: f64 = (((y as f32 + OFFSET) * (2_i32.pow(octave)) as f32) * frequency) as f64;
-                sum += 1.0 / (2_u32.pow(octave)) as f64 * noise.get([xn, yn]);
+                let scale = 2_f64.powi(octave as i32);
+                let amplitude = 1.0 / scale;
+
+                let xn = ((x as f64 + OFFSET as f64) * scale) * frequency as f64;
+                let yn = ((y as f64 + OFFSET as f64) * scale) * frequency as f64;
+
+                sum += amplitude * noise.get([xn, yn]);
             }
-            result.push_list(&(sum / divisor as f64).get_string()); // We want to normalise the octave addition to a range between 0 and 1
+
+            let normalized = (sum / divisor as f64 + 1.0) / 2.0;
+            let value = (normalized * 9.0).round() as u8;
+
+            result.push((b'0' + value) as char);
         }
     }
     Ok(result)
@@ -116,25 +127,38 @@ fn gen_perlin_advanced_dlerp(
     mut divisor: f32,
     octaves: u32,
     mix: f32,
-) -> eyre::Result<ByondValue> {
+) -> eyre::Result<String> {
     let noise = Perlin::new(seed);
+
     if divisor == 0.0 {
-        divisor = 2_f32.powf((1 - 1 * octaves) as f32) * (-1.0 + 2_f32.powf(octaves as f32)); // 1.0, 1.5, 1.75, ...
+        divisor = 2.0 - 2.0_f32.powi(1 - octaves as i32);
     }
-    let mut result = ByondValue::new_list().unwrap();
+
+    let mut result = String::with_capacity((world_size as usize) * (world_size as usize));
+
     for x in 0..world_size {
         for y in 0..world_size {
-            let mut sum: f64 = 0.0;
-            let mut xn: f64 = 0.0;
-            let mut yn: f64 = 0.0;
-            for octave in 0..octaves{
-                yn = (((y as f32 + OFFSET) * (2_i32.pow(octave)) as f32) * frequency) as f64;
-                xn = (((x as f32 + OFFSET) * (2_i32.pow(octave)) as f32) * frequency) as f64;
-                sum += 1.0 / (2_u32.pow(octave)) as f64 * noise.get([xn, yn]);
+            let mut sum = 0.0;
+
+            for octave in 0..octaves {
+                let scale = 2_u32.pow(octave) as f64;
+
+                let xn = (x as f64 + OFFSET as f64) * scale * frequency as f64;
+                let yn = (y as f64 + OFFSET as f64) * scale * frequency as f64;
+
+                sum += noise.get([xn, yn]) / scale;
             }
-            let d: f64 = 1.0 - (1.0 - xn.powf(2.0)) * (1.0 - yn.powf(2.0));
-            let lerped: f64 = (sum / divisor as f64) + ((1.0 - d) - (sum / divisor as f64)) * mix as f64;
-            result.push_list(&(lerped).get_string()); // We want to normalise the octave addition to a range between 0 and 1
+
+            let dx = (x as f64 / (world_size - 1) as f64) * 2.0 - 1.0;
+            let dy = (y as f64 / (world_size - 1) as f64) * 2.0 - 1.0;
+            let d = 1.0 - (1.0 - dx.powi(2)) * (1.0 - dy.powi(2));
+            let noise_value = sum / divisor as f64;
+
+            let lerped = noise_value + ((1.0 - d) - noise_value) * mix as f64;
+            let normalized = lerped.clamp(0.0, 1.0);
+
+            let value = (normalized * 9.0).round() as u8;
+            result.push((b'0' + value) as char);
         }
     }
     Ok(result)
