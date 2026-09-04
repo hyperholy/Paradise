@@ -42,24 +42,30 @@ Biomes:
         legioned workers. lots of legions, vetus and BDM maybe unexploded mining munitions
         abouts? maybe like sickly yellow looking floor and rock tiles, terrible ore here maybe,
         mostly mined out, occasional yellow lighting for atmosphere and rumble sfx
+	Sulphur springs (find a name that doesnt alliterate)
+		the above without the structures, transition biome
 
-    Radioactive wastes - i dont like
-        variant of industrial wastes but slightly radioactive, radioactive sulphur too
-        this time, lots of uranium to be found though
+    Obsidian sand desert
+		open desert with jagged obsidian spikes, sand could vary in colour from black to orange to yellow
+		maybe sand worm megafauna
 
     Fracture caverns
-        Tight caves, chasms but rich in plasma and diamond ores, lotsa goliath and watchers
-        here, maybe seams of ancient rock i.e. pickaxe only, dim environment
+        Tight caves, long diagonal chasms like scars but rich in plasma and diamond ores,
+		lotsa goliath and watchers here, maybe seams of ancient rock i.e. pickaxe only, dim environment
+	probably doesnt need a transition biome, very similar to ashlands
 
     Blooming oasis
         Plant filled oasis, weak kudzu here, lots of jungle plants and kudzu mobs are
         common here, small water puddles here, maybe enclosed fully by ancient rock,
         regular lavaland mobs dont spawn here jungle tiles of course, green colours for
         atmosphere and idk for sfx
+	Ashen forest, outer blooming
+		looks like a fresh wildfire
 
     Magma core
         Large lakes of lava with islands rich in metal, titanium, silver, gold,
         lotsa drakes however and magma wing watchers
+
 
     Bloodied boneyard
         Outcrops of large bones litter the area, fleshy weaker rock walls still have
@@ -103,6 +109,7 @@ Biomes:
 	var/valid_zs = levels_by_trait(ORE_LEVEL)
 	var/datum/biome_theme/chosen_biome = pick(subtypesof(/datum/biome_theme))
 	var/datum/biome_theme/our_biome = new chosen_biome
+	#warn TODO: gotta change this later
 	our_biome.temp_location_z = pick(valid_zs)
 	our_biome.setup()
 

@@ -20,8 +20,21 @@
 	generation_data = data
 	return
 
+/// Called from external source
+/datum/worldgen_modifier/proc/generate()
+	if(generation_data_expected && isnull(generation_data))
+		error("[name] found no generation data")
+		return
+	apply()
+
+/// Where the tilewise magic occurs
+/datum/worldgen_modifier/proc/apply()
+	return
+
+/// Helper function to return a value from a 2D offset list
 /datum/worldgen_modifier/proc/coord2value(x, y, list/longlist)
 	return longlist[((size * y) + (x + 1))]
+
 
 /// Default noise subtype for generating some noise over a section of map
 /datum/worldgen_modifier/noise
@@ -41,10 +54,8 @@
 	var/result_map = list()
 
 /// Called from outside, returns a result_map
-/datum/worldgen_modifier/noise/proc/generate()
-	if(generation_data_expected && isnull(generation_data))
-		error("[name] found no generation data")
-		return
+/datum/worldgen_modifier/noise/generate()
+	..()
 	if(seed == -1)
 		seed = rand(1, 999999)
 	generate_noise()
@@ -58,16 +69,17 @@
 	return
 
 /// Iterate over the map subsection and if a tile matches lower/upper range send to apply_value()
-/datum/worldgen_modifier/noise/proc/apply()
+/datum/worldgen_modifier/noise/apply()
 	for(var/turf/T in block(location_x, location_y, location_z, (size + location_x) - 1, (size + location_y) - 1, location_z))
 		var/c = coord2value(T.x - location_x, T.y - location_y, result_map)
-		if(c > lower_range && c < upper_range)
+		if(c >= lower_range && c <= upper_range)
 			apply_value(T)
 	return
 
 /// Most of tile modification and tile specific rejection occurs here
 /datum/worldgen_modifier/noise/proc/apply_value(turf/T)
 	return
+
 
 /// World generation modifier for ore generation
 /datum/worldgen_modifier/noise/ore
@@ -87,6 +99,7 @@
 	if(prob(generation_data["ore_chance"] * coord2value(T.x - location_x, T.y - location_y, generation_data["biome"]) * 2))
 		T.set_ore(pickweight(generation_data["ore_weights"]))
 	return
+
 
 /// World generation modifier for lakes, be it sulpherous or lavapherous
 /datum/worldgen_modifier/noise/humidity
@@ -108,3 +121,43 @@
 		return
 	T.changeTurf(generation_data["liquid_type"])
 	return
+
+
+/// World generation modifier for biome influence maps
+/datum/worldgen_modifier/noise/biome
+	name = "worldgen biome"
+	lower_range = 3
+	upper_range = 9
+	size = 96
+	frequency = 0.02
+	octaves = 2
+	mix = 0.5
+	// expected, "rock_type", "ambient_light" maybe?
+	generation_data_expected = TRUE
+
+/datum/worldgen_modifier/noise/biome/generate_noise()
+	result_map = rustlibs_perlin_generate_advanced_dlerp("[seed]", "[size]", "[frequency]", "[divisor]", "[octaves]", "[mix]")
+
+/datum/worldgen_modifier/noise/biome/generate()
+	..()
+	. = list("biome", result_map)
+
+/datum/worldgen_modifier/noise/biome/apply_value(turf/T)
+	if(!istype(get_area(T), /area/lavaland/surface/outdoors/unexplored))
+		return
+	T.ChangeTurf(generation_data["rock_type"])
+	//T.area = generation_data["biome_area"]
+
+
+/// World generation modifier for fauna, small random chance per tile, more at centre of biome
+/datum/worldgen_modifier/fauna
+	name = "worldgen fauna"
+	// expected, "fauna_chance", "fauna_weights"
+	generation_data_expected = TRUE
+
+/datum/worldgen_modifier/fauna/apply()
+	for(var/turf/T in block(location_x, location_y, location_z, (size + location_x) - 1, (size + location_y) - 1, location_z))
+		if(prob(generation_data["fauna_chance"]))
+			var/chosen_fauna = pickweight(generation_data["fauna_weights"])
+			new chosen_fauna(T) // go on! be free! kill people!
+
