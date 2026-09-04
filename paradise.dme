@@ -767,6 +767,7 @@
 #include "code\datums\mapping\themes\biomes_theme.dm"
 #include "code\datums\mapping\themes\caves_theme.dm"
 #include "code\datums\mapping\themes\lavaland_theme.dm"
+#include "code\datums\mapping\worldgen\worldgen_modifier.dm"
 #include "code\datums\outfits\outfit.dm"
 #include "code\datums\outfits\outfit_admin.dm"
 #include "code\datums\outfits\outfit_debug.dm"

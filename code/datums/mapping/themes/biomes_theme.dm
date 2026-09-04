@@ -31,6 +31,17 @@ Biome template idea
 	ore_list
 		ore spawn and weights
 
+/datum/proc_gen
+
+/datum/proc_gen/river
+
+/datum/proc_gen/mineshaft
+
+/datum/proc_gen/perlin
+
+/datum/biome_theme
+
+
 Biomes:
 	Ashlands
 		base lavaland
