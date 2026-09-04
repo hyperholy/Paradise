@@ -31,51 +31,47 @@ Biome template idea
 	ore_list
 		ore spawn and weights
 
-/datum/proc_gen
-
-/datum/proc_gen/river
-
-/datum/proc_gen/mineshaft
-
-/datum/proc_gen/perlin
-
-/datum/biome_theme
-
 
 Biomes:
 	Ashlands
 		base lavaland
 
-	Industrial wastes
-		Ashlands affected by the mining industry, rivers and lakes of sulphur,
-		ruins of previous mining corporations litter the place, along with their
-		legioned workers. lots of legions, vetus and BDM maybe unexploded mining munitions
-		abouts? maybe like sickly yellow looking floor and rock tiles, terrible ore here maybe,
-		mostly mined out, occasional yellow lighting for atmosphere and rumble sfx
+	 Industrial wastes
+        Ashlands affected by the mining industry, rivers and lakes of sulphur,
+        ruins of previous mining corporations litter the place, along with their
+        legioned workers. lots of legions, vetus and BDM maybe unexploded mining munitions
+        abouts? maybe like sickly yellow looking floor and rock tiles, terrible ore here maybe,
+        mostly mined out, occasional yellow lighting for atmosphere and rumble sfx
 
-	Radioactive wastes
-		variant of industrial wastes but slightly radioactive, radioactive sulphur too
-		this time, lots of uranium to be found though
+    Radioactive wastes - i dont like
+        variant of industrial wastes but slightly radioactive, radioactive sulphur too
+        this time, lots of uranium to be found though
 
-	Fracture caverns
-		Tight caves, chasms but rich in plasma and diamond ores, lotsa goliath and watchers
-		here, maybe seams of ancient rock i.e. pickaxe only, dim environment
+    Fracture caverns
+        Tight caves, chasms but rich in plasma and diamond ores, lotsa goliath and watchers
+        here, maybe seams of ancient rock i.e. pickaxe only, dim environment
 
-	Blooming oasis
-		Plant filled oasis, weak kudzu here, lots of jungle plants and kudzu mobs are
-		common here, small water puddles here, maybe enclosed fully by ancient rock,
-		regular lavaland mobs dont spawn here jungle tiles of course, green colours for
-		atmosphere and idk for sfx
+    Blooming oasis
+        Plant filled oasis, weak kudzu here, lots of jungle plants and kudzu mobs are
+        common here, small water puddles here, maybe enclosed fully by ancient rock,
+        regular lavaland mobs dont spawn here jungle tiles of course, green colours for
+        atmosphere and idk for sfx
 
-	Magma core
-		Large lakes of lava with islands rich in metal, titanium, silver, gold,
-		lotsa drakes however and magma wing watchers
+    Magma core
+        Large lakes of lava with islands rich in metal, titanium, silver, gold,
+        lotsa drakes however and magma wing watchers
 
-	Bloodied boneyard (maybe change so doesnt sound like a fortnite location)
-		Outcrops of large bones litter the area, fleshy weaker rock walls still have
-		some ore, bubblegum and the cancerous tumour thing can be found here,
-		dim red lighting and gurgles sfx
+    Bloodied boneyard
+        Outcrops of large bones litter the area, fleshy weaker rock walls still have
+        some ore, bubblegum and the cancerous tumour thing can be found here,
+        dim red lighting and gurgles sfx
 
+	+ 1 more
+		words go here
+
+
+
+	lavaland will have 2 z levels, maybe 3 and some biomes are maybe not allowed to be together! just a thought
  */
 
 /datum/biome_theme
