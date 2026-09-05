@@ -4,9 +4,9 @@
 /datum/worldgen_modifier
 	var/name = "worldgen modifier"
 	/// List of generation data for certain generators like flora placement requiring a humidity map or fauna weights
-	var/generation_data = list()
+	var/list/generation_data = list()
 	/// What generation_data flags are we expecting?
-	var/generation_data_expected = list()
+	var/list/generation_data_expected = list()
 	/// Size, width and height of the affected area
 	var/size = 0
 	/// X location offset
@@ -51,7 +51,7 @@
 	/// Seed for generation, if unset random 1,999999 number used
 	var/seed = -1
 	/// A size * size list of 0-9 chars corresponding to the noise at each tile
-	var/result_map = list()
+	var/list/result_map = list()
 
 /// Called from outside, returns a result_map
 /datum/worldgen_modifier/noise/generate()
@@ -88,12 +88,12 @@
 	upper_range = 5
 	frequency = 10
 	octaves = 1
-	generation_data_expected = ("ore_weights", "biome", "ore_chance")
+	generation_data_expected = list("ore_weights", "biome", "ore_chance")
 
-/datum/worldgen_modifier/noise/ore/apply_value(turf/T)
+#warn TODO dont do this                             vvvvvvvvvvvvvvvvv
+/datum/worldgen_modifier/noise/ore/apply_value(turf/simulated/mineral/T)
 	if(!ismineralturf(T)) // minerals only!
 		return
-
 	// multiply our base ore chance by how biome our biome is * 2
 	if(prob(generation_data["ore_chance"] * coord2value(T.x - location_x, T.y - location_y, generation_data["biome"]) * 2))
 		T.set_ore(pickweight(generation_data["ore_weights"]))
@@ -108,16 +108,16 @@
 	upper_range = 9 // only the wettest areas!
 	frequency = 1
 	octaves = 2
-	generation_data_expected = ("liquid_type")
+	generation_data_expected = list("liquid_type")
 
 /datum/worldgen_modifier/noise/humidity/generate()
 	..()
 	. = list("humidity", result_map)
 
 /datum/worldgen_modifier/noise/humidity/apply_value(turf/T)
-	if(FALSE) // various importanta checks go here
+	if(0 == 1) // various importanta checks go here
 		return
-	T.changeTurf(generation_data["liquid_type"])
+	T.ChangeTurf(generation_data["liquid_type"])
 	return
 
 
@@ -129,8 +129,8 @@
 	size = 96
 	frequency = 0.02
 	octaves = 2
-	mix = 0.5
-	generation_data_expected = ("rock_type", "ambient_light")
+	var/mix = 0.5
+	generation_data_expected = list("rock_type", "ambient_light")
 
 /datum/worldgen_modifier/noise/biome/generate_noise()
 	result_map = rustlibs_perlin_generate_advanced_dlerp("[seed]", "[size]", "[frequency]", "[divisor]", "[octaves]", "[mix]")
@@ -149,7 +149,7 @@
 /// World generation modifier for fauna, small random chance per tile, more at centre of biome
 /datum/worldgen_modifier/fauna
 	name = "worldgen fauna"
-	generation_data_expected = ("fauna_chance", "fauna_weights", "biome")
+	generation_data_expected = list("fauna_chance", "fauna_weights", "biome")
 
 /datum/worldgen_modifier/fauna/apply()
 	for(var/turf/T in block(location_x, location_y, location_z, (size + location_x) - 1, (size + location_y) - 1, location_z))
@@ -161,7 +161,7 @@
 /// World generation modifier for flora, small random chance per tile, more at higher humidity areas
 /datum/worldgen_modifier/flora
 	name = "worldgen flora"
-	generation_data_expected = ("flora_chance", "flora_weights")
+	generation_data_expected = list("flora_chance", "flora_weights")
 
 /datum/worldgen_modifier/flora/apply()
 	for(var/turf/T in block(location_x, location_y, location_z, (size + location_x) - 1, (size + location_y) - 1, location_z))
