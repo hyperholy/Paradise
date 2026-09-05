@@ -5,8 +5,8 @@
 	var/name = "worldgen modifier"
 	/// List of generation data for certain generators like flora placement requiring a humidity map or fauna weights
 	var/generation_data = list()
-	/// Are we expecting generation_data?
-	var/generation_data_expected = FALSE
+	/// What generation_data flags are we expecting?
+	var/generation_data_expected = list()
 	/// Size, width and height of the affected area
 	var/size = 0
 	/// X location offset
@@ -22,8 +22,8 @@
 
 /// Called from external source
 /datum/worldgen_modifier/proc/generate()
-	if(generation_data_expected && isnull(generation_data))
-		error("[name] found no generation data")
+	if(!isemptylist(generation_data_expected) && isnull(generation_data))
+		error("[name] found no generation data, expected [generation_data_expected]")
 		return
 	apply()
 
@@ -88,8 +88,7 @@
 	upper_range = 5
 	frequency = 10
 	octaves = 1
-	// expected, "ore_weights", "biome", "ore_chance"
-	generation_data_expected = TRUE
+	generation_data_expected = ("ore_weights", "biome", "ore_chance")
 
 /datum/worldgen_modifier/noise/ore/apply_value(turf/T)
 	if(!ismineralturf(T)) // minerals only!
@@ -109,8 +108,7 @@
 	upper_range = 9 // only the wettest areas!
 	frequency = 1
 	octaves = 2
-	// expected, "liquid_type"
-	generation_data_expected = TRUE
+	generation_data_expected = ("liquid_type")
 
 /datum/worldgen_modifier/noise/humidity/generate()
 	..()
@@ -132,8 +130,7 @@
 	frequency = 0.02
 	octaves = 2
 	mix = 0.5
-	// expected, "rock_type", "ambient_light" maybe?
-	generation_data_expected = TRUE
+	generation_data_expected = ("rock_type", "ambient_light")
 
 /datum/worldgen_modifier/noise/biome/generate_noise()
 	result_map = rustlibs_perlin_generate_advanced_dlerp("[seed]", "[size]", "[frequency]", "[divisor]", "[octaves]", "[mix]")
@@ -152,12 +149,25 @@
 /// World generation modifier for fauna, small random chance per tile, more at centre of biome
 /datum/worldgen_modifier/fauna
 	name = "worldgen fauna"
-	// expected, "fauna_chance", "fauna_weights"
-	generation_data_expected = TRUE
+	generation_data_expected = ("fauna_chance", "fauna_weights", "biome")
 
 /datum/worldgen_modifier/fauna/apply()
 	for(var/turf/T in block(location_x, location_y, location_z, (size + location_x) - 1, (size + location_y) - 1, location_z))
-		if(prob(generation_data["fauna_chance"]))
+		if(prob(generation_data["fauna_chance"]) * coord2value(T.x - location_x, T.y - location_y, generation_data["biome"]) * 2)
 			var/chosen_fauna = pickweight(generation_data["fauna_weights"])
 			new chosen_fauna(T) // go on! be free! kill people!
 
+
+/// World generation modifier for flora, small random chance per tile, more at higher humidity areas
+/datum/worldgen_modifier/flora
+	name = "worldgen flora"
+	generation_data_expected = ("flora_chance", "flora_weights")
+
+/datum/worldgen_modifier/flora/apply()
+	for(var/turf/T in block(location_x, location_y, location_z, (size + location_x) - 1, (size + location_y) - 1, location_z))
+		if(prob(generation_data["flora_chance"]) * coord2value(T.x - location_x, T.y - location_y, generation_data["biome"]) * 2)
+			var/chosen_flora = pickweight(generation_data["flora_weights"])
+			new chosen_flora(T)
+
+#warn TODO: river gen
+#warn TODO: mineshaft gen

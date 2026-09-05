@@ -1,14 +1,4 @@
 /*
-
-Reasoning
-	As a person who plays shaft miner and enjoys the crusher and killing big things, a whole lot
-	of the viability of the run hinges on if you'll find xy mob before the 1h mark and if you can
-	get its crusher trophy so you can move onto the next thing in the rather (currently) monotone
-	lavaland wastes. My aim with lavaland biomes is to make the place look nicer and different
-	between rounds, visually, and practically give more 'reason' behind flora, fauna, megafauna and
-	ore placements that players can learn and use to their advantage to rely more on skill than rng
-	for getting cool trophies
-
 Biome template idea
 	rock_type
 		base wall type
@@ -30,7 +20,6 @@ Biome template idea
 		list of sounds that could play
 	ore_list
 		ore spawn and weights
-
 
 Biomes:
 	Ashlands
@@ -66,16 +55,13 @@ Biomes:
         Large lakes of lava with islands rich in metal, titanium, silver, gold,
         lotsa drakes however and magma wing watchers
 
-
     Bloodied boneyard
         Outcrops of large bones litter the area, fleshy weaker rock walls still have
         some ore, bubblegum and the cancerous tumour thing can be found here,
         dim red lighting and gurgles sfx
 
-	+ 1 more
-		words go here
-
-
+	Ancient city
+		could be cool
 
 	lavaland will have 2 z levels, maybe 3 and some biomes are maybe not allowed to be together! just a thought
  */
