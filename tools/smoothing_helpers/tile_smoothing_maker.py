@@ -6,25 +6,22 @@ from PIL import Image as im
 # xxx
 # x x
 # xxx
-# for every cardinal dir, and inverse cardinal dir, ie just the top connected and all but the top connected
-# create a new mask from just to connected dirs
-# using the mask AND remove the offending tiles eg
-# GGG | xxx |
-# GGG &     = GGG
-# GGG |     | GGG
-# save it as a new dmi state with name-"bitmask"
-
-# the suffix is a bitmask of the byond dirs
-# it goes up to 255
+# for every cardinal dir combo (0..15 (0000 0001 0010 0011.....))
+# create a new mask from just the connected dirs
+# using the mask remove from input where the mask is transparent
+# GGG |     |
+# GGG & xxx = GGG
+# GGG | xxx | GGG
+# save it as a new dmi state with name-{bitmask}
 
 NORTH	  = 1
 SOUTH	  = 2
 EAST	  = 4
 WEST	  = 8
-NORTHEAST = 16
-SOUTHEAST = 32
-NORTHWEST = 64
-SOUTHWEST = 128
+#NORTHEAST = 16
+#SOUTHEAST = 32
+#NORTHWEST = 64
+#SOUTHWEST = 128
 
 CURR_DIR = os.path.dirname(os.path.realpath(__file__))
 PADDING = 9
@@ -79,8 +76,6 @@ def addStateToOutput(stateImg: im.Image, outputDMI: DMI, dirs: int) -> None:
 # list of bitmask ints, 0..15 = cardinal combos
 def generateMaskVariants() -> list:
     variantList = list(range(0,16))
-#    for value in range(0,15):
-#        variantList.append((~value) & 0xFF)
     return variantList
 
 
