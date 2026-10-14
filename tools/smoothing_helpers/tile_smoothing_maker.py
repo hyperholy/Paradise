@@ -21,12 +21,12 @@ NORTH	  = 1
 SOUTH	  = 2
 EAST	  = 4
 WEST	  = 8
-
 NORTHEAST = 16
 SOUTHEAST = 32
 NORTHWEST = 64
 SOUTHWEST = 128
 
+CURR_DIR = os.path.dirname(os.path.realpath(__file__))
 PADDING = 9
 
 path_mask = ""; path_input = ""; path_output = "";  input_state = ""; output_state = ""
@@ -36,11 +36,11 @@ def askForInput() -> None:
 
     path_mask = input("Enter mask filepath, defaults to test_mask.dmi: ")
     if len(path_mask) == 0:
-        path_mask = os.getcwd() + "\\test_mask.dmi"
+        path_mask = CURR_DIR + "\\test_mask.dmi"
 
     path_input = input("Enter input filepath, defaults to test_input.dmi: ")
     if len(path_input) == 0:
-        path_input = os.getcwd() + "\\test_input.dmi"
+        path_input = CURR_DIR + "\\test_input.dmi"
 
     input_state = input("Enter the DMI's state to smooth, defaults to input: ")
     if len(input_state) == 0:
@@ -48,7 +48,7 @@ def askForInput() -> None:
 
     path_output = input("Enter output filepath, defaults to current directory: ")
     if len(path_output) == 0:
-        path_output = os.getcwd()
+        path_output = CURR_DIR
     if(path_output.endswith(".dmi") == 0):
         path_output += "\\test_output.dmi"
 
@@ -119,10 +119,13 @@ def main():
         outputImg = cutFromMask(maskVariantImg, inputImg)
         addStateToOutput(outputImg, outputDMI, bitmask)
 
-    print(path_output)
     outputDMI.save_to(path_output)
     input("Press any key to exit")
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(e)
+        input("Press any key to exit")
